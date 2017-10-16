@@ -14,6 +14,8 @@
 		AD641F7D1F8F91FF002BA2AD /* libcplex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD641F7C1F8F91FF002BA2AD /* libcplex.a */; };
 		AD641F7F1F8F920F002BA2AD /* libcplexdistmip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD641F7E1F8F920F002BA2AD /* libcplexdistmip.a */; };
 		AD641F811F8F9223002BA2AD /* libilocplex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD641F801F8F9223002BA2AD /* libilocplex.a */; };
+		ADEBB5001F94F68F00C808A4 /* GHDBounds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADEBB4FE1F94F68F00C808A4 /* GHDBounds.cpp */; };
+		ADEBB5011F94F68F00C808A4 /* GHDBounds.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ADEBB4FF1F94F68F00C808A4 /* GHDBounds.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +39,8 @@
 		AD641F7C1F8F91FF002BA2AD /* libcplex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcplex.a; path = "../../Applications/IBM/ILOG/CPLEX_Studio1271/cplex/lib/x86-64_osx/static_pic/libcplex.a"; sourceTree = "<group>"; };
 		AD641F7E1F8F920F002BA2AD /* libcplexdistmip.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcplexdistmip.a; path = "../../Applications/IBM/ILOG/CPLEX_Studio1271/cplex/lib/x86-64_osx/static_pic/libcplexdistmip.a"; sourceTree = "<group>"; };
 		AD641F801F8F9223002BA2AD /* libilocplex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libilocplex.a; path = "../../Applications/IBM/ILOG/CPLEX_Studio1271/cplex/lib/x86-64_osx/static_pic/libilocplex.a"; sourceTree = "<group>"; };
+		ADEBB4FE1F94F68F00C808A4 /* GHDBounds.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GHDBounds.cpp; sourceTree = "<group>"; };
+		ADEBB4FF1F94F68F00C808A4 /* GHDBounds.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GHDBounds.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				AD641F6E1F8F913C002BA2AD /* main.cpp */,
+				ADEBB4FE1F94F68F00C808A4 /* GHDBounds.cpp */,
+				ADEBB4FF1F94F68F00C808A4 /* GHDBounds.hpp */,
 			);
 			path = cplex;
 			sourceTree = "<group>";
@@ -101,6 +107,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADEBB5011F94F68F00C808A4 /* GHDBounds.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADEBB5001F94F68F00C808A4 /* GHDBounds.cpp in Sources */,
 				AD641F6F1F8F913C002BA2AD /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
