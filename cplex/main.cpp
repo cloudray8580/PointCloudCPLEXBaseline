@@ -14,6 +14,11 @@
 #include <vector>
 #include <set>
 #include <map>
+#include "GHDBounds.hpp"
+//#include "Point.hpp"
+//#include "PointCloud.hpp"
+#include "PointCloudsCalculation.hpp"
+#include "gnuplot_i.hpp"
 
 using namespace std;
 
@@ -22,6 +27,7 @@ struct extremesetAndRemainningset{
     vector<vector<double>> remainningset;
 };
 
+void writeResultToFile(string filename);
 
 double runSolution(vector<vector<double>> &pointclouds1, vector<vector<double>> &pointclouds2);
 
@@ -56,27 +62,52 @@ double calculateDistortionDifference(multimap<vector<double>,vector<double>> rel
 
 double calculateRelationDistortion(multimap<vector<double>,vector<double>> relation);
 
+double calculateLowerBound1(const vector<vector<double>> &pointclouds1, const vector<vector<double>> &pointclouds2);
+
+double calculateLowerBound2(const vector<vector<double>> &pointclouds1, const vector<vector<double>> &pointclouds2);
+
+vector<double> calculateEccentricity(const vector<vector<double>> &pointclouds);
+
+double calculateDeterminantTest(vector<vector<double>> matrix, int size);
+
+double calculateLowerBound3(const vector<vector<double>> &pointclouds1, const vector<vector<double>> &pointclouds2);
+
+double calculateLowerBound4(const vector<vector<double>> pointclouds1, const vector<vector<double>> pointclouds2);
+
+double myCplexSolveForLB4_1(vector<vector<double>> pointclouds1, vector<vector<double>> pointclouds2);
+
+double myCplexSolveForLB4_2(vector<vector<double>> pointclouds1, vector<vector<double>> pointclouds2);
+
 int main(int argc, const char * argv[]) {
     
-    vector<vector<double>> pointclouds1 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/test1.pts"); // cube with length 1 in quadrant 1
-    vector<vector<double>> pointclouds2 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/test2.pts"); // cube with length 1 in quadrant 7
-    vector<vector<double>> pointclouds3 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/test3.pts"); // cube with length 2 in quadrant 1
-    vector<vector<double>> pointclouds4 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/test4.pts"); // 2D rectangle 2*4
-    vector<vector<double>> pointclouds5 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/test5.pts"); // 2D rectangle 2*2
-    vector<vector<double>> pointclouds6 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/test6.pts"); // 3D Up Centrum 5 points
-    vector<vector<double>> pointclouds7 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/test7.pts"); // 3D Down Centrum 5 points
-    vector<vector<double>> pointclouds8 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/test8.pts"); // 2D square with length 1
-    vector<vector<double>> pointclouds9 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/test9.pts"); // 2D square with length 2
-    vector<vector<double>> pointclouds10 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/test10.pts"); // line with length 4
-    vector<vector<double>> pointclouds11 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/test11.pts"); // line with length 2
+//    vector<vector<double>> pointclouds1 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/test1.pts"); // cube with length 1 in quadrant 1
+//    vector<vector<double>> pointclouds2 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/test2.pts"); // cube with length 1 in quadrant 7
+//    vector<vector<double>> pointclouds3 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/test3.pts"); // cube with length 2 in quadrant 1
+//    vector<vector<double>> pointclouds4 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/test4.pts"); // 2D rectangle 2*4
+//    vector<vector<double>> pointclouds5 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/test5.pts"); // 2D rectangle 2*2
+//    vector<vector<double>> pointclouds6 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/test6.pts"); // 3D Up Centrum 5 points
+//    vector<vector<double>> pointclouds7 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/test7.pts"); // 3D Down Centrum 5 points
+//    vector<vector<double>> pointclouds8 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/test8.pts"); // 2D square with length 1
+//    vector<vector<double>> pointclouds9 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/test9.pts"); // 2D square with length 2
+//    vector<vector<double>> pointclouds10 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/test10.pts"); // line with length 4
+//    vector<vector<double>> pointclouds11 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/test11.pts"); // line with length 2
+    vector<vector<double>> pointclouds12 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/test12.pts"); // cube with length 4 20 points
+//    vector<vector<double>> pointclouds13 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/test13.pts"); // cube with length 2 20 points
     vector<vector<double>> pointcloudsX1 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/000020.pts"); // totally 2639 points
     vector<vector<double>> pointcloudsX2 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/000907.pts"); // totally 2518 points
+//    vector<vector<double>> pointcloudsX3 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/000062.pts"); // totally 2708 points
+//    vector<vector<double>> pointcloudsX4 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/000640.pts"); // totally 2687 points
+    vector<vector<double>> pointcloudsX5 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/Nonnormalized1.pts"); // non normalized dataset, 420 points
+    vector<vector<double>> pointcloudsX6 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/Nonnormalized2.pts"); // non normalized dataset, 722 points
     
 //    vector<vector<double>> _10ofX1 = randomExtract(pointcloudsX1, 10);
 //    vector<vector<double>> _10ofX2 = randomExtract(pointcloudsX2, 10);
 //
-//    vector<vector<double>> _20ofX1 = randomExtract(pointcloudsX1, 20);
-//    vector<vector<double>> _20ofX2 = randomExtract(pointcloudsX2, 20);
+    vector<vector<double>> _20ofX1 = randomExtract(pointcloudsX1, 20);
+    vector<vector<double>> _20ofX2 = randomExtract(pointcloudsX2, 20);
+//
+//    vector<vector<double>> _25ofX1 = randomExtract(pointcloudsX1, 25);
+//    vector<vector<double>> _25ofX2 = randomExtract(pointcloudsX2, 25);
 //
 //    vector<vector<double>> _30ofX1 = randomExtract(pointcloudsX1, 30);
 //    vector<vector<double>> _30ofX2 = randomExtract(pointcloudsX2, 30);
@@ -101,11 +132,124 @@ int main(int argc, const char * argv[]) {
     
 //    runSolution(_50ofX1, _50ofX2);
     
-//    runSolution(pointclouds1, pointclouds3);
+//    runSolution(pointclouds12, pointclouds13);
+//
+//    calculateUpperBound1(pointclouds12, pointclouds13);
+//
+//    calculateUpperBound2(pointclouds12, pointclouds13, 8, 0.5, 12, 0.00001);
     
-    calculateUpperBound1(pointcloudsX1, pointcloudsX2);
+//    double ghd = runSolution(_20ofX1, _20ofX2);
+//    calculateUpperBound1(pointclouds12, pointclouds13);
+//    calculateUpperBound2(pointclouds12, pointclouds13, 8, 0.5, 14, 0.00001);
+//    calculateLowerBound1(_20ofX1, _20ofX2);
+//    calculateLowerBound4(_30ofX1, _30ofX2);
     
-    calculateUpperBound2(pointcloudsX1, pointcloudsX2, 20, 0.5, 50, 0.00001);
+//    Bounds bounds;
+//    Bounds::bounds result = bounds.calculateBounds_Kmeans(_20ofX1, _20ofX2, 6);
+//    double lb = result.lowerbound;
+//    double ub = result.upperbound;
+//    if (lb > ghd || ub < ghd){
+//        cout << "error!!!" << endl;
+//    }
+    
+    time_t start1,stop1, start2, stop2;
+    
+    PointCloud pointcloud1("/Users/lizhe/Desktop/pointclouddataset/000020.pts");
+    PointCloud pointcloud2("/Users/lizhe/Desktop/pointclouddataset/000907.pts");
+    PointCloud pointcloud3(_20ofX1);
+    PointCloud pointcloud4(_20ofX2);
+    
+    vector<vector<double>> _20ofX5 = randomExtract(pointcloudsX5, 20);
+    vector<vector<double>> _20ofX6 = randomExtract(pointcloudsX6, 20);
+    vector<vector<double>> _25ofX5 = randomExtract(pointcloudsX5, 25);
+    vector<vector<double>> _25ofX6 = randomExtract(pointcloudsX6, 25);
+    vector<vector<double>> _30ofX5 = randomExtract(pointcloudsX5, 30);
+    vector<vector<double>> _30ofX6 = randomExtract(pointcloudsX6, 30);
+    
+//    PointCloud pointcloud5(_25ofX5);
+//    PointCloud pointcloud6(_25ofX6);
+//    PointCloudsCalculation pcc;
+//
+//    start1 = time(NULL);
+//    double GHD = pcc.GHDistance_CPLEX(pointcloud3, pointcloud4);
+//    stop1 = time(NULL);
+//
+//    start2 = time(NULL);
+//    PointCloudsCalculation::LB_UB bounds = pcc.LowerboundAndUpperbound_kmedoids(10, pointcloud3, pointcloud4);
+//    stop2 = time(NULL);
+//
+//    double LB1 = calculateLowerBound1(_20ofX1, _20ofX2);
+//    double UB1 = calculateUpperBound1(_20ofX1, _20ofX2);
+//
+//    cout << "GHDistance: " << GHD << " ---- time: " << stop1-start1 << endl;
+//    cout << "Lowerbound1 " << LB1 << " ----- Upperbound1: " << UB1 << endl;
+//    cout << "Lowerbounds: " << bounds.lowerbound << " ---- upperbounds: " << bounds.upperbound << " ---- time: " << stop2-start2 << endl;
+    
+    PointCloud test(pointcloudsX6);
+    PointCloud::clusterResult result = test.runKmeans(5);
+//    for (auto it = result.clusters.begin(); it != result.clusters.end(); it++){
+//        cout <<"================" << endl;
+//        cout << "center: " << it->first.x << " " << it->first.y << " " << it->first.z << endl;
+//        cout << "Points: " << endl;
+//        for (int i = 0; i < it->second.size(); i++){
+//            cout << it->second[i].x << " " << it->second[i].y << " " << it->second[i].z << endl;
+//        }
+//    }
+    
+    test.generateGnuplotFiles(result.clusters, "/Users/lizhe/Desktop/plotdata/test");
+    
+//    Gnuplot gp;
+//    gp << "set terminal x11\n" ;
+//    gp << "plot sin(x)";
+}
+
+void writeResultToFile(string filename){
+    
+    ofstream outfile;
+    outfile.open(filename);
+    vector<vector<double>> pointcloudsX1 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/000020.pts"); // totally 2639 points
+    vector<vector<double>> pointcloudsX2 = creatPointCloudArrayFromFile("/Users/lizhe/Desktop/pointclouddataset/000907.pts"); // totally 2518 points
+    vector<vector<double>> pointclouds1;
+    vector<vector<double>> pointclouds2;
+    double ghd, lb1, ub1, lb, ub;
+    Bounds::bounds result;
+    Bounds bound;
+    int count = 0;
+    time_t start1, stop1, start2, stop2;
+    
+    for(int size = 20; size < 30 ; size++){ // point cloud's size
+        pointclouds1 = randomExtract(pointcloudsX1, size);
+        pointclouds2 = randomExtract(pointcloudsX2, size);
+        for (int k = 5; k < 20; k++){ // k
+            for (int i = 0; i < 3; i++){ // test case
+                count++;
+                
+                start1 = time(NULL);
+                ghd = runSolution(pointclouds1, pointclouds2);
+                stop1 = time(NULL);
+                
+                lb1 = calculateLowerBound1(pointclouds1, pointclouds2);
+                ub1 = calculateUpperBound1(pointclouds1, pointclouds2);
+                
+                start2 = time(NULL);
+                result = bound.calculateBounds_Kmeans(pointclouds1, pointclouds2, k);
+                stop2 = time(NULL);
+                
+                lb = result.lowerbound;
+                ub = result.upperbound;
+                outfile << "test case " << count << endl;
+                outfile << "size: " << size << "    k: " << k << "  subcase: " << i << endl;
+                outfile << "GHD: " << ghd << " time: " << stop1-start1 << endl;
+                outfile << "Lowerbound1: " << lb1 << "  Upperbound1: " << ub1 << endl;
+                outfile << "Lowerbound2: " << lb << "   Upperbound2: " << ub << "   time: " << stop2-start2 << endl;
+                if (lb > ghd || ub < ghd){
+                    outfile << "!!! error !!!" << endl;
+                }
+                outfile << "==========================" << endl;
+            }
+        }
+    }
+    outfile.close();
 }
 
 double runSolution(vector<vector<double>> &pointclouds1, vector<vector<double>> &pointclouds2){
@@ -114,9 +258,9 @@ double runSolution(vector<vector<double>> &pointclouds1, vector<vector<double>> 
     double target = myCplexSolve(pointclouds1, pointclouds2); // call to my CPLEX related function
     stop = time(NULL);
     
-    cout << "==========================================" << endl;
-    cout << "  our target : " << target << "   ----   time usage : "<< stop-start << endl;
-    cout << "==========================================" << endl;
+    cout << "====================================================" << endl;
+    cout << "  GHD : " << target / 2 << "   ----   time usage : "<< stop-start << endl;
+    cout << "====================================================" << endl;
     
     return target;
 }
@@ -159,7 +303,7 @@ double myCplexSolve(vector<vector<double>> &pointclouds1, vector<vector<double>>
     double target = -1.0;
     long m = pointclouds1.size();
     long n = pointclouds2.size();
-    int totalNum = m*n;
+    long totalNum = m*n;
     
     // set variable type, IloNumVarArray starts from 0.
     for (int i = 0; i < totalNum; i++){
@@ -303,6 +447,10 @@ vector<vector<double>> randomExtract(const vector<vector<double>> &pointclouds, 
     vector<vector<double>> subpointcloud;
     set<int> indexrecord;
     long num = pointclouds.size();
+    if (num <= 0){
+        return subpointcloud;
+    }
+    
     long count = number;
     int index = 0;
     srand((unsigned)time(NULL));
@@ -377,6 +525,16 @@ double calculateUpperBound2(const vector<vector<double>> &pointclouds1, const ve
     
     extremesetAndRemainningset result1 = extremeSet(pointclouds1, extremesetSize);
     extremesetAndRemainningset result2 = extremeSet(pointclouds2, extremesetSize);
+    for (int i = 0; i < result1.extremeset.size(); i++){
+        cout << "A-point " << i << " : " << result1.extremeset[i][0] << " " << result1.extremeset[i][1] << " " << result1.extremeset[i][2] << endl;
+    }
+    cout << "=================" << endl;
+    for (int i = 0; i < result2.extremeset.size(); i++){
+        cout << "B-point " << i << " : " << result2.extremeset[i][0] << " " << result2.extremeset[i][1] << " " << result2.extremeset[i][2] << endl;
+    }
+    cout << "=================" << endl;
+
+    
     
     multimap<vector<double>,vector<double>> relation = calculateExtremeSetRelation(result1.extremeset, result2.extremeset, delta);
 //    for (auto it = relation.begin(); it != relation.end(); it++){
@@ -426,7 +584,9 @@ double calculateUpperBound2(const vector<vector<double>> &pointclouds1, const ve
     
     stop = time(NULL);
     
-    cout << "The upper bound for method2 : " << upperbound << "  -----  time usage : " << stop-start << endl;
+    cout << "===============================================================" << endl;
+    cout << "  upper bound using method2: " << upperbound << "  -----  time usage : " << stop-start << endl;
+    cout << "===============================================================" << endl;
     
     return upperbound;
 }
@@ -485,6 +645,7 @@ extremesetAndRemainningset extremeSet(const vector<vector<double>> pointclouds, 
     double distanceE2X = 0;
     double distanceE1E2 = 0;
     while(count > 0){
+        bool firsttry = true;
         max = 0;
         min = diam;
         maxindex = 0;
@@ -504,12 +665,16 @@ extremesetAndRemainningset extremeSet(const vector<vector<double>> pointclouds, 
                         
                         distance = distanceE1X + distanceE2X - distanceE1E2;
                         
+                        if (firsttry){
+                            min = distance;
+                            firsttry = false;
+                        }
                         if (distance < min) {
                             min = distance;
                         }
                     }
+                    firsttry = true;
                 }
-                
                 if (min > max) {
                     max = min;
                     maxindex = x;
@@ -856,6 +1021,7 @@ multimap<vector<double>,vector<double>> improveCorrespondence(const vector<vecto
     
     multimap<vector<double>,vector<double>> tempRelation;
     
+    // if the deletion relation and inseration relation is the same, then it will be a dead loop
     do {
         
         innermax = 0;
@@ -908,11 +1074,11 @@ multimap<vector<double>,vector<double>> improveCorrespondence(const vector<vecto
                     tempdistance = fabs(sqrt((tempx[0] - tempxp[0])*(tempx[0] - tempxp[0]) + (tempx[1] - tempxp[1])*(tempx[1] - tempxp[1]) + (tempx[2] - tempxp[2])*(tempx[2] - tempxp[2])) - sqrt((tempy[0] - tempyp[0])*(tempy[0] - tempyp[0]) + (tempy[1] - tempyp[1])*(tempy[1] - tempyp[1]) + (tempy[2] - tempyp[2])*(tempy[2] - tempyp[2])));
                     if (tempdistance > max){
                         max = tempdistance;
-                        if (firstflag){
-                            min = max;
-                            firstflag = false;
-                        }
                     }
+                }
+                if (firstflag){
+                    min = max;
+                    firstflag = false;
                 }
                 if (max < min){
                     min = max;
@@ -946,11 +1112,11 @@ multimap<vector<double>,vector<double>> improveCorrespondence(const vector<vecto
                     tempdistance = fabs(sqrt((tempx[0] - tempxp[0])*(tempx[0] - tempxp[0]) + (tempx[1] - tempxp[1])*(tempx[1] - tempxp[1]) + (tempx[2] - tempxp[2])*(tempx[2] - tempxp[2])) - sqrt((tempy[0] - tempyp[0])*(tempy[0] - tempyp[0]) + (tempy[1] - tempyp[1])*(tempy[1] - tempyp[1]) + (tempy[2] - tempyp[2])*(tempy[2] - tempyp[2])));
                     if (tempdistance > max){
                         max = tempdistance;
-                        if (firstflag){
-                            min = max;
-                            firstflag = false;
-                        }
                     }
+                }
+                if (firstflag){
+                    min = max;
+                    firstflag = false;
                 }
                 if (max < min){
                     min = max;
@@ -1061,3 +1227,374 @@ double calculateRelationDistortion(multimap<vector<double>,vector<double>> relat
     
     return distortion;
 }
+
+// 1/2 max ( |diam(x) - diam(y)| , |rad(x) - rad(y)| )
+double calculateLowerBound1(const vector<vector<double>> &pointclouds1, const vector<vector<double>> &pointclouds2){
+ 
+    time_t start,stop;
+    start = time(NULL);
+    
+    double lowerbound = 0;
+ 
+    long size1 = pointclouds1.size();
+    long size2 = pointclouds2.size();
+    
+    double diam1 = 0;
+    double diam2 = 0;
+    double rad1 = 0;
+    double rad2 = 0;
+    double max = 0;
+    double temp = 0;
+    bool firsttry = true;
+    
+    for (int i = 0; i < size1; i++){
+        for (int j = 0; j < size1; j++){ // when calculation radius, you need to start from 0, but for diameter, you can start from j = i.
+            temp = sqrt((pointclouds1[i][0]-pointclouds1[j][0])*(pointclouds1[i][0]-pointclouds1[j][0]) +(pointclouds1[i][1]-pointclouds1[j][1])*(pointclouds1[i][1]-pointclouds1[j][1]) + (pointclouds1[i][2]-pointclouds1[j][2])*(pointclouds1[i][2]-pointclouds1[j][2]));
+            if (temp > diam1)
+                diam1 = temp;
+            if (temp > max){
+                max = temp;
+//                if (firsttry){
+//                    rad1 = max;
+//                    firsttry = false;
+//                }
+            }
+        }
+        if (firsttry){
+            rad1 = max;
+            firsttry = false;
+        }
+        if (max < rad1){
+            rad1 = max;
+        }
+        max = 0;
+    }
+    
+    firsttry = true;
+    max = 0;
+    
+    for (int i = 0; i < size2; i++){
+        for (int j = 0; j < size2; j++){
+            temp = sqrt((pointclouds2[i][0]-pointclouds2[j][0])*(pointclouds2[i][0]-pointclouds2[j][0]) +(pointclouds2[i][1]-pointclouds2[j][1])*(pointclouds2[i][1]-pointclouds2[j][1]) + (pointclouds2[i][2]-pointclouds2[j][2])*(pointclouds2[i][2]-pointclouds2[j][2]));
+            if (temp > diam2)
+                diam2 = temp;
+            if (temp > max){
+                max = temp;
+//                if (firsttry){
+//                    rad2 = max;
+//                    firsttry = false;
+//                }
+            }
+        }
+        if (firsttry){
+            rad2 = max;
+            firsttry = false;
+        }
+        if (max < rad2){
+            rad2 = max;
+        }
+        max = 0;
+    }
+    
+    double part1 = fabs(diam1 - diam2);
+    double part2 = fabs(rad1 - rad2);
+    
+    lowerbound = part1 > part2 ? part1 : part2;
+    lowerbound /= 2;
+    stop = time(NULL);
+    cout << "=================================================" << endl;
+    cout << "  Lowerbound1 : " << lowerbound << "   time : " << stop-start << endl;
+    cout << "  diam1 : " << diam1 << "      diam2 : " << diam2 << endl;
+    cout << "  rad1 : " << rad1 << "    rad2 : " << rad2 << endl;
+    cout << "=================================================" << endl;
+    
+    return lowerbound ;
+}
+
+// 1/2 inf R SUP (x,y) in R |eccx(X) - eccy(Y)|
+double calculateLowerBound2(const vector<vector<double>> &pointclouds1, const vector<vector<double>> &pointclouds2){
+   
+    double lowerbound = 0;
+    vector<double> ecc1 = calculateEccentricity(pointclouds1);
+    vector<double> ecc2 = calculateEccentricity(pointclouds2);
+    
+    long size1 = ecc1.size();
+    long size2 = ecc2.size(); // size 2 should equal to size 1 !
+    
+    double tempdistance;
+    vector<vector<double>> cost;
+    
+    // create the cost matrix
+    for (int i = 0; i < size1; i++){
+        for (int j = 0; j < size2; j++){
+            tempdistance = fabs(ecc1[i] - ecc2[j]);
+            cost[i][j] = tempdistance;
+        }
+    }
+    
+    double determinant = calculateDeterminantTest(cost, size1);
+    if (determinant != 0){
+        cout << "There is a perfect match " << endl;
+    }
+    
+    return lowerbound;
+}
+
+vector<double> calculateEccentricity(const vector<vector<double>> &pointclouds){
+    
+    vector<double> ecc;
+    double tempdistance = 0;
+    double max = 0;
+    
+    long size = pointclouds.size();
+    for (int i = 0; i < size; i++){
+        max = 0;
+        for (int j = 0; j < size; j++){
+            tempdistance = sqrt((pointclouds[i][0] - pointclouds[j][0])*(pointclouds[i][0] - pointclouds[j][0]) + (pointclouds[i][1] - pointclouds[j][1])*(pointclouds[i][1] - pointclouds[j][1]) + (pointclouds[i][2] - pointclouds[j][2])*(pointclouds[i][2] - pointclouds[j][2]));
+            if (tempdistance > max){
+                max = tempdistance;
+            }
+        }
+        ecc.push_back(max);
+    }
+    
+    return ecc;
+}
+
+// this is just used for test, do not use this one to calculate determinant
+double calculateDeterminantTest(vector<vector<double>> matrix, int size){
+    double det=0;
+    vector<vector<double>> temp = matrix;
+    int p, h, k, i, j;
+    if(size==1) {
+        return matrix[0][0];
+    } else if(size==2) {
+        det=(matrix[0][0]*matrix[1][1]-matrix[0][1]*matrix[1][0]);
+        return det;
+    } else {
+        for(p=0;p<size;p++) {
+            h = 0;
+            k = 0;
+            for(i=1;i<size;i++) {
+                for( j=0;j<size;j++) {
+                    if(j==p) {
+                        continue;
+                    }
+                    temp[h][k] = matrix[i][j];
+                    k++;
+                    if(k==size-1) {
+                        h++;
+                        k = 0;
+                    }
+                }
+            }
+            det=det+matrix[0][p]*pow(-1,p)*calculateDeterminantTest(temp,size-1);
+        }
+        return det;
+    }
+}
+
+double calculateLowerBound3(const vector<vector<double>> pointclouds1, const vector<vector<double>> pointclouds2){
+    double lowerbound = 0;
+    return lowerbound;
+}
+
+// 1/2 max (infdis(x->y), infdis(y->x))
+double calculateLowerBound4(const vector<vector<double>> pointclouds1, const vector<vector<double>> pointclouds2){
+    
+    time_t start,stop;
+    start = time(NULL);
+    
+    double lowerbound = 0;
+    
+    double infdisx2y = myCplexSolveForLB4_1(pointclouds1, pointclouds2);
+    double infdisy2x = myCplexSolveForLB4_2(pointclouds1, pointclouds2);
+    
+    lowerbound = infdisx2y > infdisy2x ? infdisx2y : infdisy2x;
+    lowerbound /= 2;
+    
+    stop = time(NULL);
+    
+    cout << "=================================================" << endl;
+    cout << "  Lowerbound4 : " << lowerbound << "   time : " << stop-start << endl;
+    cout << "  infdisx->y : " << infdisx2y << endl;
+    cout << "  infdisy->x : " << infdisy2x << endl;
+    cout << "=================================================" << endl;
+    
+    return lowerbound;
+}
+
+// used for method calculateLowerBound4
+double myCplexSolveForLB4_1(vector<vector<double>> pointclouds1, vector<vector<double>> pointclouds2){
+    IloEnv env;
+    IloModel model(env);
+    IloCplex cplex(model);
+    IloObjective obj(env);
+    IloNumVarArray vars(env);
+    IloRangeArray ranges(env);
+    
+    double target = -1.0;
+    long m = pointclouds1.size();
+    long n = pointclouds2.size();
+    long totalNum = m*n;
+    
+    // set variable type, IloNumVarArray starts from 0.
+    for (int i = 0; i < totalNum; i++){
+        vars.add(IloNumVar(env, 0.0, 1.0, ILOINT));
+    }
+    vars.add(IloNumVar(env, 0.0, INFINITY, ILOFLOAT)); // our target
+    
+    // declare objective
+    obj.setExpr(vars[totalNum]);
+    obj.setSense(IloObjective::Minimize);
+    model.add(obj);
+    
+    // add constraint for formula 1, notice mapping is not relation, one y for each x
+    for (int i = 0; i < m; i++){
+        IloNumVarArray tempVars(env,n);
+        IloNumArray tempCoefs(env,n);
+        IloRange tempRange(env,1.0,1.0); // expression = 1.0
+        for (int k = 0; k < n; k++){
+            tempRange.setLinearCoef(vars[i*n+k], 1.0);
+        }
+        model.add(tempRange);
+    }
+    
+//    // add constraint for formual 2
+//    for (int k = 0; k < n; k++){
+//        IloNumVarArray tempVars(env,m);
+//        IloNumArray tempCoefs(env,m);
+//        IloRange tempRange(env,1.0,INFINITY);
+//        for (int i = 0; i < m; i++){
+//            tempRange.setLinearCoef(vars[i*n+k], 1.0);
+//        }
+//        model.add(tempRange);
+//    }
+    
+    
+    // add constraint for formula 3
+    double denominator = 1.0;
+    for (int i = 0; i < m; i++){
+        for (int k = 0; k < n; k++){
+            for(int j = 0; j < m; j++){
+                for (int l = 0 ; l < n; l++){
+                    if (i == j && k == l){
+                        continue; // reduce the same
+                    }
+                    if (j*n + l <= i*n + k){
+                        continue; // reduce redudant
+                    }
+                    denominator = calculateDistortion(i, j, k, l, pointclouds1, pointclouds2);
+                    if (denominator == 0){
+                        model.add(vars[i*n+k] + vars[j*n+l] <= 2);
+                    } else {
+                        model.add(vars[i*n+k] + vars[j*n+l] -(1.0/denominator)*vars[totalNum] <= 1);
+                    }
+                }
+            }
+        }
+    }
+    
+    if(!cplex.solve()){
+        cout << "cplex solve failure ! " << endl;
+    }
+    target = cplex.getObjValue();
+    
+    //    cout << "the variable 1: " << cplex.getValue(vars[0]) << endl;
+    //    cout << "the variable 2: " << cplex.getValue(vars[1]) << endl;
+    //    cout << "the variable m*n+1: " << cplex.getValue(vars[totalNum]) << endl;
+    
+    //write the .mps file
+    //    cplex.exportModel("/Users/lizhe/Desktop/pointclouddataset/lalala.mps");
+    
+    env.end();
+    return target;
+}
+
+// used for method calculateLowerBound4
+double myCplexSolveForLB4_2(vector<vector<double>> pointclouds1, vector<vector<double>> pointclouds2){
+    IloEnv env;
+    IloModel model(env);
+    IloCplex cplex(model);
+    IloObjective obj(env);
+    IloNumVarArray vars(env);
+    IloRangeArray ranges(env);
+    
+    double target = -1.0;
+    long m = pointclouds1.size();
+    long n = pointclouds2.size();
+    long totalNum = m*n;
+    
+    // set variable type, IloNumVarArray starts from 0.
+    for (int i = 0; i < totalNum; i++){
+        vars.add(IloNumVar(env, 0.0, 1.0, ILOINT));
+    }
+    vars.add(IloNumVar(env, 0.0, INFINITY, ILOFLOAT)); // our target
+    
+    // declare objective
+    obj.setExpr(vars[totalNum]);
+    obj.setSense(IloObjective::Minimize);
+    model.add(obj);
+    
+    // add constraint for formula 1, notice mapping is not relation, one y for each x
+//    for (int i = 0; i < m; i++){
+//        IloNumVarArray tempVars(env,n);
+//        IloNumArray tempCoefs(env,n);
+//        IloRange tempRange(env,1.0,1.0); // expression = 1.0
+//        for (int k = 0; k < n; k++){
+//            tempRange.setLinearCoef(vars[i*n+k], 1.0);
+//        }
+//        model.add(tempRange);
+//    }
+    
+    // add constraint for formual 2, notice mapping is not relation, one x for each y
+    for (int k = 0; k < n; k++){
+        IloNumVarArray tempVars(env,m);
+        IloNumArray tempCoefs(env,m);
+        IloRange tempRange(env,1.0,1.0); // expression = 1.0
+        for (int i = 0; i < m; i++){
+            tempRange.setLinearCoef(vars[i*n+k], 1.0);
+        }
+        model.add(tempRange);
+    }
+    
+    
+    // add constraint for formula 3
+    double denominator = 1.0;
+    for (int i = 0; i < m; i++){
+        for (int k = 0; k < n; k++){
+            for(int j = 0; j < m; j++){
+                for (int l = 0 ; l < n; l++){
+                    if (i == j && k == l){
+                        continue; // reduce the same
+                    }
+                    if (j*n + l <= i*n + k){
+                        continue; // reduce redudant
+                    }
+                    denominator = calculateDistortion(i, j, k, l, pointclouds1, pointclouds2);
+                    if (denominator == 0){
+                        model.add(vars[i*n+k] + vars[j*n+l] <= 2);
+                    } else {
+                        model.add(vars[i*n+k] + vars[j*n+l] -(1.0/denominator)*vars[totalNum] <= 1);
+                    }
+                }
+            }
+        }
+    }
+    
+    if(!cplex.solve()){
+        cout << "cplex solve failure ! " << endl;
+    }
+    target = cplex.getObjValue();
+    
+    //    cout << "the variable 1: " << cplex.getValue(vars[0]) << endl;
+    //    cout << "the variable 2: " << cplex.getValue(vars[1]) << endl;
+    //    cout << "the variable m*n+1: " << cplex.getValue(vars[totalNum]) << endl;
+    
+    //write the .mps file
+    //    cplex.exportModel("/Users/lizhe/Desktop/pointclouddataset/lalala.mps");
+    
+    env.end();
+    return target;
+}
+
