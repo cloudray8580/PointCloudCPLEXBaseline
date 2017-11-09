@@ -12,6 +12,10 @@
 #include <stdio.h>
 #include <ilcplex/ilocplex.h>
 #include "PointCloud.hpp"
+#include "Upperbound1.hpp"
+#include "Upperbound3.hpp"
+#include "Lowerbound1.hpp"
+#include "Lowerbound4.hpp"
 #endif /* PointCloudsCalculation_hpp */
 
 class PointCloudsCalculation{
@@ -19,16 +23,84 @@ public:
     struct LB_UB{
         double lowerbound;
         double upperbound;
+        double GHDistance;
+        PointCloud::clustersMap clusters1;
+        PointCloud::clustersMap clusters2;
+        double maxRadius1;
+        double maxRadius2;
     };
     
+    static LB_UB LowerboundAndUpperbound_kmeans(int k, PointCloud pointcloud1, PointCloud pointcloud2);
+    
+    static LB_UB LowerboundAndUpperbound_kcenters(int k, PointCloud pointcloud1, PointCloud pointcloud2);
+    
     static LB_UB LowerboundAndUpperbound_kmedoids(int k, PointCloud pointcloud1, PointCloud pointcloud2);
+    
+    
+    static double Upperbound_UB1(PointCloud pointcloud1, PointCloud pointcloud2);
+    
+    static double Upperbound_UB2(PointCloud pointcloud1, PointCloud pointcloud2);
+    
+    static double Upperbound_UB3(PointCloud pointcloud1, PointCloud pointcloud2, int extremesetSize, double delta, int referencesetSize, double tolerance);
+    
+    static double Lowerbound_LB1(PointCloud pointcloud1, PointCloud pointcloud2);
+    
+    static double Lowerbound_LB2(PointCloud pointcloud1, PointCloud pointcloud2);
+    
+    static double Lowerbound_LB3(PointCloud pointcloud1, PointCloud pointcloud2);
+    
+    static double Lowerbound_LB4(PointCloud pointcloud1, PointCloud pointcloud2);
+    
     
     static double GHDistance_CPLEX(PointCloud pointcloud1, PointCloud pointcloud2);
     
     static double myCplexGHDSolve(vector<vector<double>> &pointclouds1, vector<vector<double>> &pointclouds2);
+    
     static double myCalculateDistortion(const int i, const int j, const int k, const int l, const vector<vector<double>> &pointclouds1,
                                       const vector<vector<double>> &pointclouds2);
 };
+
+PointCloudsCalculation::LB_UB PointCloudsCalculation::LowerboundAndUpperbound_kmeans(int k, PointCloud pointcloud1, PointCloud pointcloud2){
+    double lowerbound;
+    double upperbound;
+    
+    double maxRadius1;
+    double maxRadius2;
+    
+    double GHDistance;
+    
+    PointCloud::clusterResult result1 = pointcloud1.runKmeans(k);
+    cout << "=============" << endl;
+    PointCloud::clusterResult result2 = pointcloud2.runKmeans(k);
+    
+    for(auto it = result1.clusters.begin(); it != result1.clusters.end(); it++){
+        cout << "center: " << endl;
+        cout << it->first.x << " " << it->first.y << " " << it->first.z << endl;
+        cout << "points: " << endl;
+        for (int i = 0; i < it->second.size(); i++){
+            cout << it->second[i].x << " " << it->second[i].y << " " << it->second[i].z << endl;
+        }
+    }
+    
+    
+    maxRadius1 = pointcloud1.calculateClusterMaxRadius(result1.clusters);
+    maxRadius2 = pointcloud2.calculateClusterMaxRadius(result2.clusters);
+    
+    GHDistance = GHDistance_CPLEX(result1.centers, result2.centers);
+    
+    lowerbound = GHDistance - maxRadius1 - maxRadius2;
+    upperbound = GHDistance + maxRadius1 + maxRadius2;
+    
+    LB_UB bounds;
+    bounds.lowerbound = lowerbound;
+    bounds.upperbound = upperbound;
+    bounds.GHDistance = GHDistance;
+    bounds.clusters1 = result1.clusters;
+    bounds.clusters2 = result2.clusters;
+    bounds.maxRadius1 = maxRadius1;
+    bounds.maxRadius2 = maxRadius2;
+    return bounds;
+}
 
 PointCloudsCalculation::LB_UB PointCloudsCalculation::LowerboundAndUpperbound_kmedoids(int k, PointCloud pointcloud1, PointCloud pointcloud2){
     double lowerbound;
@@ -58,13 +130,50 @@ PointCloudsCalculation::LB_UB PointCloudsCalculation::LowerboundAndUpperbound_km
     
     GHDistance = GHDistance_CPLEX(result1.centers, result2.centers);
     
-    lowerbound = GHDistance - 2*maxRadius1 - 2*maxRadius2;
-    upperbound = GHDistance + 2*maxRadius1 + 2*maxRadius2;
+    lowerbound = GHDistance - maxRadius1 - maxRadius2;
+    upperbound = GHDistance + maxRadius1 + maxRadius2;
     
     LB_UB bounds;
     bounds.lowerbound = lowerbound;
     bounds.upperbound = upperbound;
+    bounds.GHDistance = GHDistance;
+    bounds.clusters1 = result1.clusters;
+    bounds.clusters2 = result2.clusters;
+    bounds.maxRadius1 = maxRadius1;
+    bounds.maxRadius2 = maxRadius2;
     return bounds;
+}
+
+double PointCloudsCalculation::Upperbound_UB1(PointCloud pointcloud1, PointCloud pointcloud2){
+    double upperbound;
+    vector<vector<double>> _pointcloud1 = pointcloud1.getPoints_2();
+    vector<vector<double>> _pointcloud2 = pointcloud2.getPoints_2();
+    upperbound = calculateUpperBound1(_pointcloud1, _pointcloud2);
+    return upperbound;
+}
+
+double PointCloudsCalculation::Upperbound_UB3(PointCloud pointcloud1, PointCloud pointcloud2, int extremesetSize, double delta, int referencesetSize, double tolerance){
+    double upperbound;
+    vector<vector<double>> _pointcloud1 = pointcloud1.getPoints_2();
+    vector<vector<double>> _pointcloud2 = pointcloud2.getPoints_2();
+    upperbound = calculateUpperBound3(_pointcloud1, _pointcloud2, extremesetSize, delta, referencesetSize, tolerance);
+    return upperbound;
+}
+
+double PointCloudsCalculation::Lowerbound_LB1(PointCloud pointcloud1, PointCloud pointcloud2){
+    double lowerbound;
+    vector<vector<double>> _pointcloud1 = pointcloud1.getPoints_2();
+    vector<vector<double>> _pointcloud2 = pointcloud2.getPoints_2();
+    lowerbound = calculateLowerBound1(_pointcloud1, _pointcloud2);
+    return lowerbound;
+}
+
+double PointCloudsCalculation::Lowerbound_LB4(PointCloud pointcloud1, PointCloud pointcloud2){
+    double lowerbound;
+    vector<vector<double>> _pointcloud1 = pointcloud1.getPoints_2();
+    vector<vector<double>> _pointcloud2 = pointcloud2.getPoints_2();
+    lowerbound = calculateLowerBound4(_pointcloud1, _pointcloud2);
+    return lowerbound;
 }
 
 double PointCloudsCalculation::GHDistance_CPLEX(PointCloud pointcloud1, PointCloud pointcloud2){

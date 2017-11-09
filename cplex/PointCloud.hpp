@@ -16,6 +16,7 @@
 #include <fstream>
 #include <map>
 #include <string>
+#include <sys/stat.h>
 #include "Point.hpp"
 
 #endif /* PointCloud_hpp */
@@ -44,6 +45,7 @@ public:
 //    };
 //
 //    typedef map<Point, vector<Point>, compareByPosition> clustersMap;
+    
     // I define the bool operator < in Point
     typedef map<Point, vector<Point>> clustersMap;
     
@@ -416,8 +418,12 @@ double PointCloud::calculateClusterMaxRadius(clustersMap clusters){
 }
 
 void PointCloud::generateGnuplotFiles(clustersMap clusters, string address){
+    
+    mkdir(address.c_str(), 0777);
+    
     long clusterNumber = clusters.size();
     string filename;
+    
     // create file for each cluster
     auto it = clusters.begin();
     for (int filecount = 1; filecount <= clusterNumber; filecount++, it++){
