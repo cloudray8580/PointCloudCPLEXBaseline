@@ -42,9 +42,12 @@ public:
         map<string, vector<testResult>> results;
     };
     
+    vector<vector<double>> kcenter_radius1;
+    vector<vector<double>> kcenter_radius2;
+    
     void run();
     void runCalculationAllFileAllMethod();
-    map<string, vector<testResult>> runCalculationAllMethod(PointCloud p1, PointCloud p2, bool kmeans, bool kmedoids, bool ub1, bool ub2, bool ub3, bool lb1, bool lb2, bool lb3, bool lb4);
+    map<string, vector<testResult>> runCalculationAllMethod(PointCloud p1, PointCloud p2, bool kcenters, bool kmeans, bool kmedoids, bool ub1, bool ub2, bool ub3, bool lb1, bool lb2, bool lb3, bool lb4);
     
     vector<testResult> runCalculationCluster(int k1, int k2, int footstep, PointCloud p1, PointCloud p2, int method);
     
@@ -55,6 +58,8 @@ public:
     
     void generateGnuplotDataAndCommand_runningtime_multiFile(vector<testResultOneDatasetMultiMethod>, string address);
     void generateGnuplotDataAndCommand_bounds_multiFile(vector<testResultOneDatasetMultiMethod>, string address);
+    
+    void generateGnuplotDataAndCommand_clustersSize(vector<vector<double>> clusterSize, string address, string suffix);
     
     vector<PointCloud> loadDataFromDirectory(string folderPath);
     vector<PointCloud> loadData(int type);
@@ -75,6 +80,7 @@ TestManagement::TestManagement(string configFilePath){
 void TestManagement::run(){
     
     // get configuration of methods used
+    bool kcenters = false;
     bool kmeans = false;
     bool kmedoids = false;
     bool ub1 = false;
@@ -84,12 +90,19 @@ void TestManagement::run(){
     bool lb2 = false;
     bool lb3 = false;
     bool lb4 = false;
-    string test =this->configuration["run_kmeans"];
+    
+    string plotMethod = "kcenters";
+    if (this->configuration["run_kcenters"] == "true"){
+        kcenters = true;
+        plotMethod = "kcenters";
+    }
     if (this->configuration["run_kmeans"] == "true"){
         kmeans = true;
+        plotMethod = "kmeans";
     }
     if (this->configuration["run_kmedoids"] == "true"){
         kmedoids = true;
+        plotMethod = "kmedoids";
     }
     if (this->configuration["run_ub1"] == "true"){
         ub1 = true;
@@ -119,19 +132,32 @@ void TestManagement::run(){
         string address2 = this->configuration["pointcloud2"];
         PointCloud p1(address1);
         PointCloud p2(address2);
-        map<string, vector<testResult>> results = runCalculationAllMethod(p1, p2, kmeans, kmedoids, ub1, ub2, ub3, lb1, lb2, lb3, lb4);
+        map<string, vector<testResult>> results = runCalculationAllMethod(p1, p2, kcenters, kmeans, kmedoids, ub1, ub2, ub3, lb1, lb2, lb3, lb4);
         string plotaddress = this->configuration["gnuplot_path"];
-        generateGnuplotDataAndCommand_runningtime(results["kmeans"], plotaddress);
-        generateGnuplotDataAndCommand_bounds(results["kmeans"], plotaddress);
-        generateGnuplotDataAndCommand_bounds_UBLB(results["kmeans"], plotaddress);
+        generateGnuplotDataAndCommand_runningtime(results[plotMethod], plotaddress);
+        generateGnuplotDataAndCommand_bounds(results[plotMethod], plotaddress);
+        generateGnuplotDataAndCommand_bounds_UBLB(results[plotMethod], plotaddress);
+        generateGnuplotDataAndCommand_bounds_AllMethod(results, plotaddress);
+        generateGnuplotDataAndCommand_clustersSize(kcenter_radius1, plotaddress, "p1");
+        generateGnuplotDataAndCommand_clustersSize(kcenter_radius2, plotaddress, "p2");
     } else {
         return;
     }
 }
 
-map<string, vector<TestManagement::testResult>> TestManagement::runCalculationAllMethod(PointCloud p1, PointCloud p2, bool kmeans, bool kmedoids, bool ub1, bool ub2, bool ub3, bool lb1, bool lb2, bool lb3, bool lb4){
+map<string, vector<TestManagement::testResult>> TestManagement::runCalculationAllMethod(PointCloud p1, PointCloud p2, bool kcenters, bool kmeans, bool kmedoids, bool ub1, bool ub2, bool ub3, bool lb1, bool lb2, bool lb3, bool lb4){
+    
+    kcenter_radius1.clear();
+    kcenter_radius2.clear();
     
     map<string, vector<testResult>> results;
+    if(kcenters){
+        int k1 = atoi(this->configuration["k_start"].c_str());
+        int k2 = atoi(this->configuration["k_end"].c_str());
+        int footstep = atoi(this->configuration["k_footstep"].c_str());
+        vector<testResult> results_kmeans = runCalculationCluster(k1, k2, footstep, p1, p2, 2);
+        results["kcenters"] = results_kmeans;
+    }
     
     if(kmeans){
         int k1 = atoi(this->configuration["k_start"].c_str());
@@ -231,6 +257,11 @@ vector<TestManagement::testResult> TestManagement::runCalculationCluster(int k1,
             bounds = pcc.LowerboundAndUpperbound_kmeans(k, p1, p2);
         } else if(method == 1){
             bounds = pcc.LowerboundAndUpperbound_kmedoids(k, p1, p2);
+        } else if(method == 2){
+//            bounds = pcc.LowerboundAndUpperbound_kcenters(k, p1, p2);
+//            bounds = pcc.LowerboundAndUpperbound_kcenters_upgradelb(k, p1, p2);
+//            bounds = pcc.LowerboundAndUpperbound_kcenters_GlobalMatching(k, p1, p2);
+            bounds = pcc.LowerboundAndUpperbound_kcenters_MyApproach3(k, p1, p2);
         }
         end = time(NULL);
         result.k = k;
@@ -241,8 +272,12 @@ vector<TestManagement::testResult> TestManagement::runCalculationCluster(int k1,
         result.maxradius2 = bounds.maxRadius2;
         results.push_back(result);
         if (flag){
-            p1.generateGnuplotFiles(bounds.clusters1, plotaddress+"/p1-k"+to_string(k));
-            p2.generateGnuplotFiles(bounds.clusters2, plotaddress+"/p2-k"+to_string(k));
+            p1.generateGnuplotFiles(bounds.clusters1, plotaddress+"/clusters-p1-k"+to_string(k));
+            p2.generateGnuplotFiles(bounds.clusters2, plotaddress+"/clusters-p2-k"+to_string(k));
+            kcenter_radius1.push_back(p1.getClustersRadius(bounds.clusters1));
+            kcenter_radius2.push_back(p2.getClustersRadius(bounds.clusters1));
+//            p1.generateClustersSizeFiles(bounds.clusters1, plotaddress+"/clustersSize-p1-k"+to_string(k));
+//            p1.generateClustersSizeFiles(bounds.clusters1, plotaddress+"/clustersSize-p2-k"+to_string(k));
         }
     }
     return results;
@@ -332,25 +367,64 @@ void TestManagement::generateGnuplotDataAndCommand_bounds_AllMethod(map<string, 
     long resultsNumber = results.size();
     string filename;
     ofstream outfile;
-    filename = address+"/k-bounds.dat";
+    filename = address+"/k-bounds-all.dat";
     outfile.open(filename);
     
-    vector<testResult> kmeans = results["kmeans"];
+    vector<testResult> kcenters = results["kcenters"];
     vector<testResult> ub1 = results["ub1"];
     vector<testResult> lb1 = results["lb1"];
     // create file
-    for (int i = 0; i < resultsNumber; i++){
-        outfile << kmeans[i].k << " " << kmeans[i].upperbound << " " << kmeans[i].lowerbound << " "<< ub1[0].upperbound << " " << lb1[0].lowerbound << endl;
+    for (int i = 0; i < kcenters.size(); i++){
+        outfile << kcenters[i].k << " " << kcenters[i].upperbound << " " << kcenters[i].lowerbound << " "<< ub1[0].upperbound << " " << lb1[0].lowerbound << endl;
     }
     outfile.close();
     
     // create the command file
-    string filename_cmd = address+"/command-k-bounds";
+    string filename_cmd = address+"/command-k-bounds-all";
     outfile.open(filename_cmd);
     
     outfile << "set xlabel " << "\"" << "k" << "\"" << endl;
     outfile << "set ylabel " << "\"" << "distance" << "\"" << endl;
     outfile << "plot ";
-    outfile << "\"" << filename << "\"" << " using 1:2 w lp pt 5 title \"kmeans_Upperbound\"," << "\"" << filename << "\"" << " using 1:3 w lp pt 7 title \"kmeans_Lowerbound\"," << "\"" << filename << "\"" << " using 1:4 w lp pt 9 title \"1_upperbound\"," << "\"" << filename << "\"" << " using 1:5 w lp pt 11 title \"1_lowerbound\"" << endl;
+    outfile << "\"" << filename << "\"" << " using 1:2 w lp pt 5 title \"k-Upperbound\"," << "\"" << filename << "\"" << " using 1:3 w lp pt 7 title \"k-Lowerbound\"," << "\"" << filename << "\"" << " using 1:4 w lp pt 9 title \"upperbound1\"," << "\"" << filename << "\"" << " using 1:5 w lp pt 11 title \"lowerbound1\"" << endl;
+    outfile.close();
+}
+
+void TestManagement::generateGnuplotDataAndCommand_clustersSize(vector<vector<double>> clusterSize, string address, string suffix){
+//    mkdir(address.c_str(), 0777);
+    
+    long resultsNumber = clusterSize.size();
+    long maxSize = clusterSize[resultsNumber-1].size();
+    string filename;
+    ofstream outfile;
+    filename = address+"/"+suffix+"-k-clusterSize.dat";
+    outfile.open(filename);
+    
+    for(int i = 0; i < maxSize; i++){
+        outfile << i+1 << " ";
+        for(int j = 0; j < resultsNumber; j++){
+            if(i < clusterSize[j].size()){
+                outfile << clusterSize[j][i] << " ";
+            } else {
+                outfile << 0 << " ";
+            }
+        }
+        outfile << endl;
+    }
+    
+    outfile.close();
+    
+    // create the command file
+    string filename_cmd = address+"/"+suffix+"-command-k-clusterSize";
+    outfile.open(filename_cmd);
+    
+    outfile << "set style fill pattern 1 border" << endl;
+    outfile << "set xlabel " << "\"" << "cluster" << "\"" << endl;
+    outfile << "set ylabel " << "\"" << "radius" << "\"" << endl;
+    outfile << "plot ";
+    for(int i = 0; i < resultsNumber-1; i++){
+        outfile << "\"" << filename << "\"" << " using " << i+2 << ":xtic(1) title \"k=" << clusterSize[i].size() << "\" with histogram,";
+    }
+    outfile << "\"" << filename << "\"" << " using " << resultsNumber+1 << ":xtic(1) title \"k=" << clusterSize[resultsNumber-1].size() << "\" with histogram";
     outfile.close();
 }

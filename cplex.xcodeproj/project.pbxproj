@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AD271DA31FB182DA002C3BE8 /* gnuplot_i.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD271DA21FB182DA002C3BE8 /* gnuplot_i.hpp */; };
+		AD271DA71FB1EEC5002C3BE8 /* ConfigHelper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD271DA51FB1EEC5002C3BE8 /* ConfigHelper.hpp */; };
 		AD641F6F1F8F913C002BA2AD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD641F6E1F8F913C002BA2AD /* main.cpp */; };
 		AD641F771F8F9161002BA2AD /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD641F761F8F9160002BA2AD /* IOKit.framework */; };
 		AD641F791F8F9170002BA2AD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD641F781F8F9170002BA2AD /* CoreFoundation.framework */; };
@@ -15,12 +16,18 @@
 		AD641F7D1F8F91FF002BA2AD /* libcplex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD641F7C1F8F91FF002BA2AD /* libcplex.a */; };
 		AD641F7F1F8F920F002BA2AD /* libcplexdistmip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD641F7E1F8F920F002BA2AD /* libcplexdistmip.a */; };
 		AD641F811F8F9223002BA2AD /* libilocplex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD641F801F8F9223002BA2AD /* libilocplex.a */; };
+		AD91CA1F1FB47C860013B649 /* Upperbound3.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD91CA1D1FB47C860013B649 /* Upperbound3.hpp */; };
+		AD91CA231FB482C60013B649 /* Lowerbound4.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD91CA211FB482C60013B649 /* Lowerbound4.hpp */; };
+		AD91CA271FB483890013B649 /* Upperbound1.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD91CA251FB483890013B649 /* Upperbound1.hpp */; };
+		AD91CA2D1FB483DF0013B649 /* Lowerbound1.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD91CA2B1FB483DF0013B649 /* Lowerbound1.hpp */; };
+		AD91CA311FB484C00013B649 /* Lowerbound2.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD91CA2F1FB484C00013B649 /* Lowerbound2.hpp */; };
+		AD91CA351FB48F950013B649 /* OtherSupportFunctions.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD91CA331FB48F950013B649 /* OtherSupportFunctions.hpp */; };
+		AD91CA391FB4906A0013B649 /* TemporaryTestData.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD91CA371FB4906A0013B649 /* TemporaryTestData.hpp */; };
+		ADD95A1E22B27A67003EC9D2 /* MaxLoss.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ADD95A1C22B27A67003EC9D2 /* MaxLoss.hpp */; };
 		ADDE3E431FA9C0C400E94446 /* Point.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ADDE3E411FA9C0C400E94446 /* Point.hpp */; };
 		ADE9377E1FAA0CF2000FD945 /* PointCloud.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ADE9377C1FAA0CF2000FD945 /* PointCloud.hpp */; };
 		ADE937821FAAE58B000FD945 /* PointCloudsCalculation.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ADE937801FAAE58B000FD945 /* PointCloudsCalculation.hpp */; };
-		ADE937851FAB2AAA000FD945 /* TestManagement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADE937831FAB2AAA000FD945 /* TestManagement.cpp */; };
 		ADE937861FAB2AAA000FD945 /* TestManagement.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ADE937841FAB2AAA000FD945 /* TestManagement.hpp */; };
-		ADEBB5011F94F68F00C808A4 /* GHDBounds.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ADEBB4FF1F94F68F00C808A4 /* GHDBounds.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		AD271DA21FB182DA002C3BE8 /* gnuplot_i.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = gnuplot_i.hpp; sourceTree = "<group>"; };
+		AD271DA51FB1EEC5002C3BE8 /* ConfigHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ConfigHelper.hpp; sourceTree = "<group>"; };
+		AD5341201FB55C0500C921CB /* runconfig.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = runconfig.cfg; sourceTree = "<group>"; };
 		AD641F6B1F8F913C002BA2AD /* cplex */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cplex; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD641F6E1F8F913C002BA2AD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		AD641F761F8F9160002BA2AD /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
@@ -45,16 +54,18 @@
 		AD641F7C1F8F91FF002BA2AD /* libcplex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcplex.a; path = "../../Applications/IBM/ILOG/CPLEX_Studio1271/cplex/lib/x86-64_osx/static_pic/libcplex.a"; sourceTree = "<group>"; };
 		AD641F7E1F8F920F002BA2AD /* libcplexdistmip.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcplexdistmip.a; path = "../../Applications/IBM/ILOG/CPLEX_Studio1271/cplex/lib/x86-64_osx/static_pic/libcplexdistmip.a"; sourceTree = "<group>"; };
 		AD641F801F8F9223002BA2AD /* libilocplex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libilocplex.a; path = "../../Applications/IBM/ILOG/CPLEX_Studio1271/cplex/lib/x86-64_osx/static_pic/libilocplex.a"; sourceTree = "<group>"; };
-		ADDE3E401FA9C0C400E94446 /* Point.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Point.cpp; sourceTree = "<group>"; };
+		AD91CA1D1FB47C860013B649 /* Upperbound3.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Upperbound3.hpp; sourceTree = "<group>"; };
+		AD91CA211FB482C60013B649 /* Lowerbound4.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Lowerbound4.hpp; sourceTree = "<group>"; };
+		AD91CA251FB483890013B649 /* Upperbound1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Upperbound1.hpp; sourceTree = "<group>"; };
+		AD91CA2B1FB483DF0013B649 /* Lowerbound1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Lowerbound1.hpp; sourceTree = "<group>"; };
+		AD91CA2F1FB484C00013B649 /* Lowerbound2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Lowerbound2.hpp; sourceTree = "<group>"; };
+		AD91CA331FB48F950013B649 /* OtherSupportFunctions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OtherSupportFunctions.hpp; sourceTree = "<group>"; };
+		AD91CA371FB4906A0013B649 /* TemporaryTestData.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TemporaryTestData.hpp; sourceTree = "<group>"; };
+		ADD95A1C22B27A67003EC9D2 /* MaxLoss.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MaxLoss.hpp; sourceTree = "<group>"; };
 		ADDE3E411FA9C0C400E94446 /* Point.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Point.hpp; sourceTree = "<group>"; };
-		ADE9377B1FAA0CF2000FD945 /* PointCloud.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PointCloud.cpp; sourceTree = "<group>"; };
 		ADE9377C1FAA0CF2000FD945 /* PointCloud.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PointCloud.hpp; sourceTree = "<group>"; };
-		ADE9377F1FAAE58B000FD945 /* PointCloudsCalculation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PointCloudsCalculation.cpp; sourceTree = "<group>"; };
 		ADE937801FAAE58B000FD945 /* PointCloudsCalculation.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PointCloudsCalculation.hpp; sourceTree = "<group>"; };
-		ADE937831FAB2AAA000FD945 /* TestManagement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestManagement.cpp; sourceTree = "<group>"; };
 		ADE937841FAB2AAA000FD945 /* TestManagement.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestManagement.hpp; sourceTree = "<group>"; };
-		ADEBB4FE1F94F68F00C808A4 /* GHDBounds.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GHDBounds.cpp; sourceTree = "<group>"; };
-		ADEBB4FF1F94F68F00C808A4 /* GHDBounds.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GHDBounds.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,18 +105,22 @@
 		AD641F6D1F8F913C002BA2AD /* cplex */ = {
 			isa = PBXGroup;
 			children = (
-				AD271DA21FB182DA002C3BE8 /* gnuplot_i.hpp */,
 				AD641F6E1F8F913C002BA2AD /* main.cpp */,
-				ADEBB4FE1F94F68F00C808A4 /* GHDBounds.cpp */,
-				ADEBB4FF1F94F68F00C808A4 /* GHDBounds.hpp */,
-				ADDE3E401FA9C0C400E94446 /* Point.cpp */,
-				ADDE3E411FA9C0C400E94446 /* Point.hpp */,
-				ADE9377B1FAA0CF2000FD945 /* PointCloud.cpp */,
-				ADE9377C1FAA0CF2000FD945 /* PointCloud.hpp */,
-				ADE9377F1FAAE58B000FD945 /* PointCloudsCalculation.cpp */,
-				ADE937801FAAE58B000FD945 /* PointCloudsCalculation.hpp */,
-				ADE937831FAB2AAA000FD945 /* TestManagement.cpp */,
+				AD5341201FB55C0500C921CB /* runconfig.cfg */,
 				ADE937841FAB2AAA000FD945 /* TestManagement.hpp */,
+				ADE937801FAAE58B000FD945 /* PointCloudsCalculation.hpp */,
+				ADE9377C1FAA0CF2000FD945 /* PointCloud.hpp */,
+				ADDE3E411FA9C0C400E94446 /* Point.hpp */,
+				AD91CA251FB483890013B649 /* Upperbound1.hpp */,
+				AD91CA1D1FB47C860013B649 /* Upperbound3.hpp */,
+				AD91CA2B1FB483DF0013B649 /* Lowerbound1.hpp */,
+				AD91CA2F1FB484C00013B649 /* Lowerbound2.hpp */,
+				AD91CA211FB482C60013B649 /* Lowerbound4.hpp */,
+				AD271DA51FB1EEC5002C3BE8 /* ConfigHelper.hpp */,
+				AD271DA21FB182DA002C3BE8 /* gnuplot_i.hpp */,
+				AD91CA331FB48F950013B649 /* OtherSupportFunctions.hpp */,
+				AD91CA371FB4906A0013B649 /* TemporaryTestData.hpp */,
+				ADD95A1C22B27A67003EC9D2 /* MaxLoss.hpp */,
 			);
 			path = cplex;
 			sourceTree = "<group>";
@@ -130,9 +145,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADEBB5011F94F68F00C808A4 /* GHDBounds.hpp in Headers */,
+				ADD95A1E22B27A67003EC9D2 /* MaxLoss.hpp in Headers */,
+				AD91CA271FB483890013B649 /* Upperbound1.hpp in Headers */,
+				AD91CA391FB4906A0013B649 /* TemporaryTestData.hpp in Headers */,
+				AD91CA1F1FB47C860013B649 /* Upperbound3.hpp in Headers */,
 				ADDE3E431FA9C0C400E94446 /* Point.hpp in Headers */,
+				AD91CA351FB48F950013B649 /* OtherSupportFunctions.hpp in Headers */,
+				AD271DA71FB1EEC5002C3BE8 /* ConfigHelper.hpp in Headers */,
 				AD271DA31FB182DA002C3BE8 /* gnuplot_i.hpp in Headers */,
+				AD91CA2D1FB483DF0013B649 /* Lowerbound1.hpp in Headers */,
+				AD91CA231FB482C60013B649 /* Lowerbound4.hpp in Headers */,
+				AD91CA311FB484C00013B649 /* Lowerbound2.hpp in Headers */,
 				ADE9377E1FAA0CF2000FD945 /* PointCloud.hpp in Headers */,
 				ADE937821FAAE58B000FD945 /* PointCloudsCalculation.hpp in Headers */,
 				ADE937861FAB2AAA000FD945 /* TestManagement.hpp in Headers */,
@@ -166,7 +189,7 @@
 		AD641F631F8F913C002BA2AD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "李喆";
 				TargetAttributes = {
 					AD641F6A1F8F913C002BA2AD = {
@@ -197,7 +220,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADE937851FAB2AAA000FD945 /* TestManagement.cpp in Sources */,
 				AD641F6F1F8F913C002BA2AD /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +241,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -226,6 +249,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -276,6 +300,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -283,6 +308,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -315,44 +341,52 @@
 		AD641F731F8F913C002BA2AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9W57MLZWWT;
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
 					/Users/lizhe/Applications/IBM/ILOG/CPLEX_Studio1271/concert/include,
 					/Users/lizhe/Applications/IBM/ILOG/CPLEX_Studio1271/cplex/include,
+					/usr/local/Cellar/armadillo/9.400.3/include,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"/Users/lizhe/Applications/IBM/ILOG/CPLEX_Studio1271/concert/lib/x86-64_osx/static_pic",
 					"/Users/lizhe/Applications/IBM/ILOG/CPLEX_Studio1271/cplex/lib/x86-64_osx/static_pic",
+					/usr/local/Cellar/armadillo/9.400.3/lib,
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DIL_STD";
+				OTHER_LDFLAGS = "-larmadillo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		AD641F741F8F913C002BA2AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9W57MLZWWT;
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
 					/Users/lizhe/Applications/IBM/ILOG/CPLEX_Studio1271/concert/include,
 					/Users/lizhe/Applications/IBM/ILOG/CPLEX_Studio1271/cplex/include,
+					/usr/local/Cellar/armadillo/9.400.3/include,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"/Users/lizhe/Applications/IBM/ILOG/CPLEX_Studio1271/concert/lib/x86-64_osx/static_pic",
 					"/Users/lizhe/Applications/IBM/ILOG/CPLEX_Studio1271/cplex/lib/x86-64_osx/static_pic",
+					/usr/local/Cellar/armadillo/9.400.3/lib,
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DIL_STD";
+				OTHER_LDFLAGS = "-larmadillo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

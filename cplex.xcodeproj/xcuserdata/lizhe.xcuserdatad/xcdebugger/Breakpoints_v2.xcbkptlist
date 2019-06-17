@@ -9,994 +9,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.188015"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "247"
-            endingLineNumber = "247"
-            landmarkName = "writeResultToFile(string filename)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.18953"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "357"
-            endingLineNumber = "357"
-            landmarkName = "myCplexSolve(vector&lt;vector&lt;double&gt;&gt; &amp;pointclouds1, vector&lt;vector&lt;double&gt;&gt; &amp;pointclouds2)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.191076"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "435"
-            endingLineNumber = "435"
-            landmarkName = "creatPointCloudArrayFromFile(string filename)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.192211"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "661"
-            endingLineNumber = "661"
-            landmarkName = "extremeSet(const vector&lt;vector&lt;double&gt;&gt; pointclouds, int number)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.193538"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "667"
-            endingLineNumber = "667"
-            landmarkName = "extremeSet(const vector&lt;vector&lt;double&gt;&gt; pointclouds, int number)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.194709"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "766"
-            endingLineNumber = "766"
-            landmarkName = "calculateExtremeSetRelation(const vector&lt;vector&lt;double&gt;&gt; extremeset1, const vector&lt;vector&lt;double&gt;&gt; extremeset2, double delta)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.195829"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "827"
-            endingLineNumber = "827"
-            landmarkName = "incrementExtendCorrespondence(vector&lt;vector&lt;double&gt;&gt; extremeset1, vector&lt;vector&lt;double&gt;&gt; extremeset2, vector&lt;vector&lt;double&gt;&gt; referenceset1, vector&lt;vector&lt;double&gt;&gt; referenceset2, multimap&lt;vector&lt;double&gt;,vector&lt;double&gt;&gt; relation)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.197327"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "802"
-            endingLineNumber = "802"
-            landmarkName = "incrementExtendCorrespondence(vector&lt;vector&lt;double&gt;&gt; extremeset1, vector&lt;vector&lt;double&gt;&gt; extremeset2, vector&lt;vector&lt;double&gt;&gt; referenceset1, vector&lt;vector&lt;double&gt;&gt; referenceset2, multimap&lt;vector&lt;double&gt;,vector&lt;double&gt;&gt; relation)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.198496"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "858"
-            endingLineNumber = "858"
-            landmarkName = "incrementExtendCorrespondence(vector&lt;vector&lt;double&gt;&gt; extremeset1, vector&lt;vector&lt;double&gt;&gt; extremeset2, vector&lt;vector&lt;double&gt;&gt; referenceset1, vector&lt;vector&lt;double&gt;&gt; referenceset2, multimap&lt;vector&lt;double&gt;,vector&lt;double&gt;&gt; relation)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.199656"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "853"
-            endingLineNumber = "853"
-            landmarkName = "incrementExtendCorrespondence(vector&lt;vector&lt;double&gt;&gt; extremeset1, vector&lt;vector&lt;double&gt;&gt; extremeset2, vector&lt;vector&lt;double&gt;&gt; referenceset1, vector&lt;vector&lt;double&gt;&gt; referenceset2, multimap&lt;vector&lt;double&gt;,vector&lt;double&gt;&gt; relation)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.200772"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "837"
-            endingLineNumber = "837"
-            landmarkName = "incrementExtendCorrespondence(vector&lt;vector&lt;double&gt;&gt; extremeset1, vector&lt;vector&lt;double&gt;&gt; extremeset2, vector&lt;vector&lt;double&gt;&gt; referenceset1, vector&lt;vector&lt;double&gt;&gt; referenceset2, multimap&lt;vector&lt;double&gt;,vector&lt;double&gt;&gt; relation)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.201872"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "830"
-            endingLineNumber = "830"
-            landmarkName = "incrementExtendCorrespondence(vector&lt;vector&lt;double&gt;&gt; extremeset1, vector&lt;vector&lt;double&gt;&gt; extremeset2, vector&lt;vector&lt;double&gt;&gt; referenceset1, vector&lt;vector&lt;double&gt;&gt; referenceset2, multimap&lt;vector&lt;double&gt;,vector&lt;double&gt;&gt; relation)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.202952"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "829"
-            endingLineNumber = "829"
-            landmarkName = "incrementExtendCorrespondence(vector&lt;vector&lt;double&gt;&gt; extremeset1, vector&lt;vector&lt;double&gt;&gt; extremeset2, vector&lt;vector&lt;double&gt;&gt; referenceset1, vector&lt;vector&lt;double&gt;&gt; referenceset2, multimap&lt;vector&lt;double&gt;,vector&lt;double&gt;&gt; relation)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.204041"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "617"
-            endingLineNumber = "617"
-            landmarkName = "extremeSet(const vector&lt;vector&lt;double&gt;&gt; pointclouds, int number)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.205146"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "619"
-            endingLineNumber = "619"
-            landmarkName = "extremeSet(const vector&lt;vector&lt;double&gt;&gt; pointclouds, int number)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.206404"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "679"
-            endingLineNumber = "679"
-            landmarkName = "extremeSet(const vector&lt;vector&lt;double&gt;&gt; pointclouds, int number)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.20763"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "677"
-            endingLineNumber = "677"
-            landmarkName = "extremeSet(const vector&lt;vector&lt;double&gt;&gt; pointclouds, int number)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.208763"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "831"
-            endingLineNumber = "831"
-            landmarkName = "incrementExtendCorrespondence(vector&lt;vector&lt;double&gt;&gt; extremeset1, vector&lt;vector&lt;double&gt;&gt; extremeset2, vector&lt;vector&lt;double&gt;&gt; referenceset1, vector&lt;vector&lt;double&gt;&gt; referenceset2, multimap&lt;vector&lt;double&gt;,vector&lt;double&gt;&gt; relation)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.209862"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "775"
-            endingLineNumber = "775"
-            landmarkName = "calculateExtremeSetRelation(const vector&lt;vector&lt;double&gt;&gt; extremeset1, const vector&lt;vector&lt;double&gt;&gt; extremeset2, double delta)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.210946"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "776"
-            endingLineNumber = "776"
-            landmarkName = "unknown"
-            landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.21203"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "772"
-            endingLineNumber = "772"
-            landmarkName = "calculateExtremeSetRelation(const vector&lt;vector&lt;double&gt;&gt; extremeset1, const vector&lt;vector&lt;double&gt;&gt; extremeset2, double delta)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.213107"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "773"
-            endingLineNumber = "773"
-            landmarkName = "calculateExtremeSetRelation(const vector&lt;vector&lt;double&gt;&gt; extremeset1, const vector&lt;vector&lt;double&gt;&gt; extremeset2, double delta)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.21419"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "887"
-            endingLineNumber = "887"
-            landmarkName = "incrementExtendCorrespondence(vector&lt;vector&lt;double&gt;&gt; extremeset1, vector&lt;vector&lt;double&gt;&gt; extremeset2, vector&lt;vector&lt;double&gt;&gt; referenceset1, vector&lt;vector&lt;double&gt;&gt; referenceset2, multimap&lt;vector&lt;double&gt;,vector&lt;double&gt;&gt; relation)"
-            landmarkType = "9">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "incrementExtendCorrespondence(std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::map&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::less&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt;, std::__1::allocator&lt;std::__1::pair&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; const, std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt; &gt;)"
-                  moduleName = "cplex"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lizhe/XcodeWorkspace/cplex/cplex/main.cpp"
-                  timestampString = "530177096.268814"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "721"
-                  endingLineNumber = "721"
-                  offsetFromSymbolStart = "4452">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "incrementExtendCorrespondence(std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::map&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::less&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt;, std::__1::allocator&lt;std::__1::pair&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; const, std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt; &gt;)"
-                  moduleName = "cplex"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lizhe/XcodeWorkspace/cplex/cplex/main.cpp"
-                  timestampString = "530177096.270478"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "721"
-                  endingLineNumber = "721"
-                  offsetFromSymbolStart = "4492">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "incrementExtendCorrespondence(std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::map&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::less&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt;, std::__1::allocator&lt;std::__1::pair&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; const, std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt; &gt;)"
-                  moduleName = "cplex"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lizhe/XcodeWorkspace/cplex/cplex/main.cpp"
-                  timestampString = "530177096.272198"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "721"
-                  endingLineNumber = "721"
-                  offsetFromSymbolStart = "13953">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "incrementExtendCorrespondence(std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::map&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::less&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt;, std::__1::allocator&lt;std::__1::pair&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; const, std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt; &gt;)"
-                  moduleName = "cplex"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lizhe/XcodeWorkspace/cplex/cplex/main.cpp"
-                  timestampString = "530177096.273837"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "721"
-                  endingLineNumber = "721"
-                  offsetFromSymbolStart = "23357">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.215272"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "883"
-            endingLineNumber = "883"
-            landmarkName = "incrementExtendCorrespondence(vector&lt;vector&lt;double&gt;&gt; extremeset1, vector&lt;vector&lt;double&gt;&gt; extremeset2, vector&lt;vector&lt;double&gt;&gt; referenceset1, vector&lt;vector&lt;double&gt;&gt; referenceset2, multimap&lt;vector&lt;double&gt;,vector&lt;double&gt;&gt; relation)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.216365"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "886"
-            endingLineNumber = "886"
-            landmarkName = "incrementExtendCorrespondence(vector&lt;vector&lt;double&gt;&gt; extremeset1, vector&lt;vector&lt;double&gt;&gt; extremeset2, vector&lt;vector&lt;double&gt;&gt; referenceset1, vector&lt;vector&lt;double&gt;&gt; referenceset2, multimap&lt;vector&lt;double&gt;,vector&lt;double&gt;&gt; relation)"
-            landmarkType = "9">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "incrementExtendCorrespondence(std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::map&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::less&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt;, std::__1::allocator&lt;std::__1::pair&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; const, std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt; &gt;)"
-                  moduleName = "cplex"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lizhe/XcodeWorkspace/cplex/cplex/main.cpp"
-                  timestampString = "530177114.072333"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "721"
-                  endingLineNumber = "721"
-                  offsetFromSymbolStart = "4452">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "incrementExtendCorrespondence(std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::map&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::less&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt;, std::__1::allocator&lt;std::__1::pair&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; const, std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt; &gt;)"
-                  moduleName = "cplex"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lizhe/XcodeWorkspace/cplex/cplex/main.cpp"
-                  timestampString = "530177114.074386"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "721"
-                  endingLineNumber = "721"
-                  offsetFromSymbolStart = "4492">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "incrementExtendCorrespondence(std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::map&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::less&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt;, std::__1::allocator&lt;std::__1::pair&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; const, std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt; &gt;)"
-                  moduleName = "cplex"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lizhe/XcodeWorkspace/cplex/cplex/main.cpp"
-                  timestampString = "530177114.076541"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "721"
-                  endingLineNumber = "721"
-                  offsetFromSymbolStart = "13953">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "incrementExtendCorrespondence(std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::vector&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt;, std::__1::map&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;, std::__1::less&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt;, std::__1::allocator&lt;std::__1::pair&lt;std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; const, std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt; &gt; &gt; &gt;)"
-                  moduleName = "cplex"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lizhe/XcodeWorkspace/cplex/cplex/main.cpp"
-                  timestampString = "530177114.07845"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "721"
-                  endingLineNumber = "721"
-                  offsetFromSymbolStart = "23357">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.217469"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1021"
-            endingLineNumber = "1021"
-            landmarkName = "improveCorrespondence(const vector&lt;vector&lt;double&gt;&gt; pointcloud1, const vector&lt;vector&lt;double&gt;&gt; pointcloud2, multimap&lt;vector&lt;double&gt;,vector&lt;double&gt;&gt; relation, double tolerance)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.218576"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1024"
-            endingLineNumber = "1024"
-            landmarkName = "improveCorrespondence(const vector&lt;vector&lt;double&gt;&gt; pointcloud1, const vector&lt;vector&lt;double&gt;&gt; pointcloud2, multimap&lt;vector&lt;double&gt;,vector&lt;double&gt;&gt; relation, double tolerance)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.219672"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1028"
-            endingLineNumber = "1028"
-            landmarkName = "improveCorrespondence(const vector&lt;vector&lt;double&gt;&gt; pointcloud1, const vector&lt;vector&lt;double&gt;&gt; pointcloud2, multimap&lt;vector&lt;double&gt;,vector&lt;double&gt;&gt; relation, double tolerance)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.220783"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1029"
-            endingLineNumber = "1029"
-            landmarkName = "improveCorrespondence(const vector&lt;vector&lt;double&gt;&gt; pointcloud1, const vector&lt;vector&lt;double&gt;&gt; pointcloud2, multimap&lt;vector&lt;double&gt;,vector&lt;double&gt;&gt; relation, double tolerance)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.221909"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1039"
-            endingLineNumber = "1039"
-            landmarkName = "improveCorrespondence(const vector&lt;vector&lt;double&gt;&gt; pointcloud1, const vector&lt;vector&lt;double&gt;&gt; pointcloud2, multimap&lt;vector&lt;double&gt;,vector&lt;double&gt;&gt; relation, double tolerance)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.223183"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1044"
-            endingLineNumber = "1044"
-            landmarkName = "improveCorrespondence(const vector&lt;vector&lt;double&gt;&gt; pointcloud1, const vector&lt;vector&lt;double&gt;&gt; pointcloud2, multimap&lt;vector&lt;double&gt;,vector&lt;double&gt;&gt; relation, double tolerance)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.224569"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "985"
-            endingLineNumber = "985"
-            landmarkName = "extendCorrespondence(vector&lt;vector&lt;double&gt;&gt; pointcloud1, vector&lt;vector&lt;double&gt;&gt; pointcloud2, multimap&lt;vector&lt;double&gt;,vector&lt;double&gt;&gt; relation)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.22583"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "958"
-            endingLineNumber = "958"
-            landmarkName = "extendCorrespondence(vector&lt;vector&lt;double&gt;&gt; pointcloud1, vector&lt;vector&lt;double&gt;&gt; pointcloud2, multimap&lt;vector&lt;double&gt;,vector&lt;double&gt;&gt; relation)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.227126"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "506"
-            endingLineNumber = "506"
-            landmarkName = "unknown"
-            landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.228261"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "515"
-            endingLineNumber = "515"
-            landmarkName = "unknown"
-            landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.229402"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "516"
-            endingLineNumber = "516"
-            landmarkName = "unknown"
-            landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.230545"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "528"
-            endingLineNumber = "528"
-            landmarkName = "calculateUpperBound2(const vector&lt;vector&lt;double&gt;&gt; &amp;pointclouds1, const vector&lt;vector&lt;double&gt;&gt; &amp;pointclouds2, int extremesetSize, double delta, int referencesetSize, double tolerance)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.232107"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "535"
-            endingLineNumber = "535"
-            landmarkName = "calculateUpperBound2(const vector&lt;vector&lt;double&gt;&gt; &amp;pointclouds1, const vector&lt;vector&lt;double&gt;&gt; &amp;pointclouds2, int extremesetSize, double delta, int referencesetSize, double tolerance)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.233524"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "536"
-            endingLineNumber = "536"
-            landmarkName = "calculateUpperBound2(const vector&lt;vector&lt;double&gt;&gt; &amp;pointclouds1, const vector&lt;vector&lt;double&gt;&gt; &amp;pointclouds2, int extremesetSize, double delta, int referencesetSize, double tolerance)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.23472"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "547"
-            endingLineNumber = "547"
-            landmarkName = "calculateUpperBound2(const vector&lt;vector&lt;double&gt;&gt; &amp;pointclouds1, const vector&lt;vector&lt;double&gt;&gt; &amp;pointclouds2, int extremesetSize, double delta, int referencesetSize, double tolerance)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.236175"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "555"
-            endingLineNumber = "555"
-            landmarkName = "calculateUpperBound2(const vector&lt;vector&lt;double&gt;&gt; &amp;pointclouds1, const vector&lt;vector&lt;double&gt;&gt; &amp;pointclouds2, int extremesetSize, double delta, int referencesetSize, double tolerance)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.237901"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "564"
-            endingLineNumber = "564"
-            landmarkName = "calculateUpperBound2(const vector&lt;vector&lt;double&gt;&gt; &amp;pointclouds1, const vector&lt;vector&lt;double&gt;&gt; &amp;pointclouds2, int extremesetSize, double delta, int referencesetSize, double tolerance)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.239279"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "572"
-            endingLineNumber = "572"
-            landmarkName = "calculateUpperBound2(const vector&lt;vector&lt;double&gt;&gt; &amp;pointclouds1, const vector&lt;vector&lt;double&gt;&gt; &amp;pointclouds2, int extremesetSize, double delta, int referencesetSize, double tolerance)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.240505"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "611"
-            endingLineNumber = "611"
-            landmarkName = "extremeSet(const vector&lt;vector&lt;double&gt;&gt; pointclouds, int number)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.241726"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "621"
-            endingLineNumber = "621"
-            landmarkName = "extremeSet(const vector&lt;vector&lt;double&gt;&gt; pointclouds, int number)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.242899"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1118"
-            endingLineNumber = "1118"
-            landmarkName = "improveCorrespondence(const vector&lt;vector&lt;double&gt;&gt; pointcloud1, const vector&lt;vector&lt;double&gt;&gt; pointcloud2, multimap&lt;vector&lt;double&gt;,vector&lt;double&gt;&gt; relation, double tolerance)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.244071"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1115"
-            endingLineNumber = "1115"
-            landmarkName = "improveCorrespondence(const vector&lt;vector&lt;double&gt;&gt; pointcloud1, const vector&lt;vector&lt;double&gt;&gt; pointcloud2, multimap&lt;vector&lt;double&gt;,vector&lt;double&gt;&gt; relation, double tolerance)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.245212"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1077"
-            endingLineNumber = "1077"
-            landmarkName = "improveCorrespondence(const vector&lt;vector&lt;double&gt;&gt; pointcloud1, const vector&lt;vector&lt;double&gt;&gt; pointcloud2, multimap&lt;vector&lt;double&gt;,vector&lt;double&gt;&gt; relation, double tolerance)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.246476"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1019"
-            endingLineNumber = "1019"
-            landmarkName = "improveCorrespondence(const vector&lt;vector&lt;double&gt;&gt; pointcloud1, const vector&lt;vector&lt;double&gt;&gt; pointcloud2, multimap&lt;vector&lt;double&gt;,vector&lt;double&gt;&gt; relation, double tolerance)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.247678"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1072"
-            endingLineNumber = "1072"
-            landmarkName = "improveCorrespondence(const vector&lt;vector&lt;double&gt;&gt; pointcloud1, const vector&lt;vector&lt;double&gt;&gt; pointcloud2, multimap&lt;vector&lt;double&gt;,vector&lt;double&gt;&gt; relation, double tolerance)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.248826"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1392"
-            endingLineNumber = "1392"
-            landmarkName = "calculateDeterminantTest(vector&lt;vector&lt;double&gt;&gt; matrix, int size)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.249971"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1400"
-            endingLineNumber = "1400"
-            landmarkName = "calculateLowerBound3(const vector&lt;vector&lt;double&gt;&gt; pointclouds1, const vector&lt;vector&lt;double&gt;&gt; pointclouds2)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.251203"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1400"
-            endingLineNumber = "1400"
-            landmarkName = "calculateLowerBound3(const vector&lt;vector&lt;double&gt;&gt; pointclouds1, const vector&lt;vector&lt;double&gt;&gt; pointclouds2)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.252402"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1402"
-            endingLineNumber = "1402"
-            landmarkName = "unknown"
-            landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "cplex/GHDBounds.hpp"
             timestampString = "531302304.805264"
             startingColumnNumber = "9223372036854775807"
@@ -1414,11 +426,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cplex/PointCloudsCalculation.hpp"
-            timestampString = "531382247.244306"
+            timestampString = "533655016.229634"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
             landmarkName = "PointCloudsCalculation::LowerboundAndUpperbound_kmedoids(int k, PointCloud pointcloud1, PointCloud pointcloud2)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1430,11 +442,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cplex/PointCloudsCalculation.hpp"
-            timestampString = "531382247.244359"
+            timestampString = "533655016.230163"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
             landmarkName = "PointCloudsCalculation::LowerboundAndUpperbound_kmedoids(int k, PointCloud pointcloud1, PointCloud pointcloud2)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1446,11 +458,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cplex/PointCloudsCalculation.hpp"
-            timestampString = "531382247.244404"
+            timestampString = "533655016.230281"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
             landmarkName = "PointCloudsCalculation::LowerboundAndUpperbound_kmedoids(int k, PointCloud pointcloud1, PointCloud pointcloud2)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1462,11 +474,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cplex/PointCloudsCalculation.hpp"
-            timestampString = "531382247.244447"
+            timestampString = "533655016.230387"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
             landmarkName = "PointCloudsCalculation::LowerboundAndUpperbound_kmedoids(int k, PointCloud pointcloud1, PointCloud pointcloud2)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1478,11 +490,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cplex/PointCloudsCalculation.hpp"
-            timestampString = "531382247.24449"
+            timestampString = "533655016.230492"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
             landmarkName = "PointCloudsCalculation::LowerboundAndUpperbound_kmedoids(int k, PointCloud pointcloud1, PointCloud pointcloud2)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1494,27 +506,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cplex/PointCloudsCalculation.hpp"
-            timestampString = "531382247.244531"
+            timestampString = "533655016.230588"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "PointCloudsCalculation::LowerboundAndUpperbound_kmedoids(int k, PointCloud pointcloud1, PointCloud pointcloud2)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/PointCloudsCalculation.hpp"
-            timestampString = "531382247.244573"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
             landmarkName = "PointCloudsCalculation::LowerboundAndUpperbound_kmedoids(int k, PointCloud pointcloud1, PointCloud pointcloud2)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1526,11 +522,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cplex/PointCloud.hpp"
-            timestampString = "531739821.253972"
+            timestampString = "582124721.4173"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
             landmarkName = "PointCloud::randomExtractCenterWithMarks(int number, vector&lt;Point&gt; &amp;pointcloud)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1542,11 +538,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cplex/PointCloud.hpp"
-            timestampString = "531739821.25405"
+            timestampString = "582124721.417364"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "307"
-            endingLineNumber = "307"
+            startingLineNumber = "321"
+            endingLineNumber = "321"
             landmarkName = "PointCloud::runKmedoids(int k)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1558,12 +554,492 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cplex/PointCloud.hpp"
-            timestampString = "531739821.254108"
+            timestampString = "582124721.417411"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "255"
+            endingLineNumber = "255"
+            landmarkName = "PointCloud::runKmedoids(int k)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/PointCloud.hpp"
+            timestampString = "582124721.417454"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "308"
+            endingLineNumber = "308"
+            landmarkName = "PointCloud::runKmedoids(int k)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/PointCloud.hpp"
+            timestampString = "582124721.4174941"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "219"
+            endingLineNumber = "219"
+            landmarkName = "PointCloud::runKmedoids(int k)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/PointCloud.hpp"
+            timestampString = "582124721.4175349"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "220"
+            endingLineNumber = "220"
+            landmarkName = "PointCloud::runKmedoids(int k)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/PointCloud.hpp"
+            timestampString = "582124721.417574"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "247"
+            endingLineNumber = "247"
+            landmarkName = "PointCloud::runKmedoids(int k)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/PointCloud.hpp"
+            timestampString = "582124721.4176151"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "248"
+            endingLineNumber = "248"
+            landmarkName = "PointCloud::runKmedoids(int k)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/PointCloud.hpp"
+            timestampString = "582124721.417654"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "228"
+            endingLineNumber = "228"
+            landmarkName = "PointCloud::runKmedoids(int k)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/PointCloud.hpp"
+            timestampString = "582124721.4176919"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "311"
+            endingLineNumber = "311"
+            landmarkName = "PointCloud::runKmedoids(int k)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/PointCloud.hpp"
+            timestampString = "582124721.417731"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "310"
+            endingLineNumber = "310"
+            landmarkName = "PointCloud::runKmedoids(int k)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/PointCloud.hpp"
+            timestampString = "582124721.41777"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "331"
+            endingLineNumber = "331"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/PointCloud.hpp"
+            timestampString = "582124721.417809"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "401"
+            endingLineNumber = "401"
+            landmarkName = "PointCloud::runKmeans(int k)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/PointCloud.hpp"
+            timestampString = "582124721.4178489"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "404"
+            endingLineNumber = "404"
+            landmarkName = "PointCloud::runKmeans(int k)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/PointCloud.hpp"
+            timestampString = "582124721.417888"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "406"
+            endingLineNumber = "406"
+            landmarkName = "PointCloud::runKmeans(int k)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/PointCloud.hpp"
+            timestampString = "582124721.417927"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "407"
+            endingLineNumber = "407"
+            landmarkName = "PointCloud::runKmeans(int k)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.232021"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "TestManagement::run()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.232948"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "TestManagement::run()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.233575"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "TestManagement::run()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.234158"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "TestManagement::run()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.234732"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
+            landmarkName = "TestManagement::runCalculationAllMethod(PointCloud p1, PointCloud p2, bool kcenters, bool kmeans, bool kmedoids, bool ub1, bool ub2, bool ub3, bool lb1, bool lb2, bool lb3, bool lb4)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.235301"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
+            landmarkName = "TestManagement::runCalculationAllMethod(PointCloud p1, PointCloud p2, bool kcenters, bool kmeans, bool kmedoids, bool ub1, bool ub2, bool ub3, bool lb1, bool lb2, bool lb3, bool lb4)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.235862"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
+            landmarkName = "TestManagement::runCalculationAllMethod(PointCloud p1, PointCloud p2, bool kcenters, bool kmeans, bool kmedoids, bool ub1, bool ub2, bool ub3, bool lb1, bool lb2, bool lb3, bool lb4)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.236419"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "TestManagement::run()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.236976"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "TestManagement::run()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.237523"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "275"
+            endingLineNumber = "275"
+            landmarkName = "TestManagement::runCalculationCluster(int k1, int k2, int footstep, PointCloud p1, PointCloud p2, int method)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.238081"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "276"
+            endingLineNumber = "276"
+            landmarkName = "TestManagement::runCalculationCluster(int k1, int k2, int footstep, PointCloud p1, PointCloud p2, int method)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.238635"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "243"
+            endingLineNumber = "243"
+            landmarkName = "TestManagement::runCalculationCluster(int k1, int k2, int footstep, PointCloud p1, PointCloud p2, int method)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.239194"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "242"
+            endingLineNumber = "242"
+            landmarkName = "TestManagement::runCalculationCluster(int k1, int k2, int footstep, PointCloud p1, PointCloud p2, int method)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.239748"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "241"
             endingLineNumber = "241"
-            landmarkName = "PointCloud::runKmedoids(int k)"
+            landmarkName = "TestManagement::runCalculationCluster(int k1, int k2, int footstep, PointCloud p1, PointCloud p2, int method)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.240298"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "245"
+            endingLineNumber = "245"
+            landmarkName = "TestManagement::runCalculationCluster(int k1, int k2, int footstep, PointCloud p1, PointCloud p2, int method)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.240857"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "360"
+            endingLineNumber = "360"
+            landmarkName = "TestManagement::generateGnuplotDataAndCommand_bounds_UBLB(vector&lt;TestManagement::testResult&gt; results, string address)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.241438"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "340"
+            endingLineNumber = "340"
+            landmarkName = "TestManagement::generateGnuplotDataAndCommand_bounds_UBLB(vector&lt;TestManagement::testResult&gt; results, string address)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1574,12 +1050,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cplex/PointCloud.hpp"
-            timestampString = "531739821.254168"
+            timestampString = "582124721.418117"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "294"
-            endingLineNumber = "294"
-            landmarkName = "PointCloud::runKmedoids(int k)"
+            startingLineNumber = "423"
+            endingLineNumber = "423"
+            landmarkName = "PointCloud::runKcenters(int k)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1590,12 +1066,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cplex/PointCloud.hpp"
-            timestampString = "531739821.254245"
+            timestampString = "582124721.418161"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "205"
-            endingLineNumber = "205"
-            landmarkName = "PointCloud::runKmedoids(int k)"
+            startingLineNumber = "431"
+            endingLineNumber = "431"
+            landmarkName = "PointCloud::runKcenters(int k)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1606,12 +1082,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cplex/PointCloud.hpp"
-            timestampString = "531739821.254295"
+            timestampString = "582124721.418203"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "206"
-            endingLineNumber = "206"
-            landmarkName = "PointCloud::runKmedoids(int k)"
+            startingLineNumber = "462"
+            endingLineNumber = "462"
+            landmarkName = "PointCloud::runKcenters(int k)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1622,12 +1098,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cplex/PointCloud.hpp"
-            timestampString = "531739821.254345"
+            timestampString = "582124721.418245"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "233"
-            endingLineNumber = "233"
-            landmarkName = "PointCloud::runKmedoids(int k)"
+            startingLineNumber = "484"
+            endingLineNumber = "484"
+            landmarkName = "PointCloud::runKcenters(int k)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1638,12 +1114,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cplex/PointCloud.hpp"
-            timestampString = "531739821.254393"
+            timestampString = "582124721.418285"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "234"
-            endingLineNumber = "234"
-            landmarkName = "PointCloud::runKmedoids(int k)"
+            startingLineNumber = "434"
+            endingLineNumber = "434"
+            landmarkName = "PointCloud::runKcenters(int k)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1654,12 +1130,108 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cplex/PointCloud.hpp"
-            timestampString = "531739821.254456"
+            timestampString = "582124721.418327"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "214"
-            endingLineNumber = "214"
-            landmarkName = "PointCloud::runKmedoids(int k)"
+            startingLineNumber = "441"
+            endingLineNumber = "441"
+            landmarkName = "PointCloud::runKcenters(int k)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.242704"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "348"
+            endingLineNumber = "348"
+            landmarkName = "TestManagement::generateGnuplotDataAndCommand_bounds_UBLB(vector&lt;TestManagement::testResult&gt; results, string address)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.243287"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "350"
+            endingLineNumber = "350"
+            landmarkName = "TestManagement::generateGnuplotDataAndCommand_bounds_UBLB(vector&lt;TestManagement::testResult&gt; results, string address)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.243641"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "345"
+            endingLineNumber = "345"
+            landmarkName = "TestManagement::generateGnuplotDataAndCommand_bounds_UBLB(vector&lt;TestManagement::testResult&gt; results, string address)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.243971"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "346"
+            endingLineNumber = "346"
+            landmarkName = "TestManagement::generateGnuplotDataAndCommand_bounds_UBLB(vector&lt;TestManagement::testResult&gt; results, string address)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.244558"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "377"
+            endingLineNumber = "377"
+            landmarkName = "TestManagement::generateGnuplotDataAndCommand_bounds_AllMethod(map&lt;string, vector&lt;testResult&gt;&gt; results, string address)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.245064"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "281"
+            endingLineNumber = "281"
+            landmarkName = "TestManagement::runCalculationCluster(int k1, int k2, int footstep, PointCloud p1, PointCloud p2, int method)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1670,13 +1242,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cplex/PointCloud.hpp"
-            timestampString = "531739821.254522"
+            timestampString = "582124721.418424"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "297"
-            endingLineNumber = "297"
-            landmarkName = "PointCloud::runKmedoids(int k)"
-            landmarkType = "7">
+            startingLineNumber = "726"
+            endingLineNumber = "726"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1686,13 +1258,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cplex/PointCloud.hpp"
-            timestampString = "531739821.254595"
+            timestampString = "582124721.418466"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "296"
-            endingLineNumber = "296"
-            landmarkName = "PointCloud::runKmedoids(int k)"
-            landmarkType = "7">
+            startingLineNumber = "690"
+            endingLineNumber = "690"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1701,109 +1273,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.254664"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
-            landmarkName = "main(int argc, const char * argv[])"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.256074"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
-            landmarkName = "main(int argc, const char * argv[])"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/PointCloud.hpp"
-            timestampString = "531739821.257436"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "317"
-            endingLineNumber = "317"
-            landmarkName = "PointCloud::runKmeans(int k)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/PointCloud.hpp"
-            timestampString = "531739821.257495"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "387"
-            endingLineNumber = "387"
-            landmarkName = "PointCloud::runKmeans(int k)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/PointCloud.hpp"
-            timestampString = "531739821.25754"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "390"
-            endingLineNumber = "390"
-            landmarkName = "PointCloud::runKmeans(int k)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/PointCloud.hpp"
-            timestampString = "531739821.257583"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "392"
-            endingLineNumber = "392"
-            landmarkName = "PointCloud::runKmeans(int k)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "cplex/PointCloud.hpp"
-            timestampString = "531739821.257624"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.245727"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "393"
             endingLineNumber = "393"
-            landmarkName = "PointCloud::runKmeans(int k)"
+            landmarkName = "TestManagement::generateGnuplotDataAndCommand_clustersSize(vector&lt;vector&lt;double&gt;&gt; clusterSize, string address, string suffix)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1813,13 +1289,173 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "cplex/main.cpp"
-            timestampString = "531739821.257667"
+            filePath = "cplex/TestManagement.hpp"
+            timestampString = "533655016.246153"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
-            landmarkName = "main(int argc, const char * argv[])"
+            startingLineNumber = "428"
+            endingLineNumber = "428"
+            landmarkName = "TestManagement::generateGnuplotDataAndCommand_clustersSize(vector&lt;vector&lt;double&gt;&gt; clusterSize, string address, string suffix)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/PointCloud.hpp"
+            timestampString = "582124721.418528"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "754"
+            endingLineNumber = "754"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/PointCloudsCalculation.hpp"
+            timestampString = "533655016.246655"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "245"
+            endingLineNumber = "245"
+            landmarkName = "PointCloudsCalculation::LowerboundAndUpperbound_kcenters_upgradelb_competitiveub(int k, PointCloud pointcloud1, PointCloud pointcloud2)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/PointCloudsCalculation.hpp"
+            timestampString = "533655016.246746"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "616"
+            endingLineNumber = "616"
+            landmarkName = "PointCloudsCalculation::GHDistance_CPLEX_With_Matching(PointCloud pointcloud1, PointCloud pointcloud2)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/PointCloudsCalculation.hpp"
+            timestampString = "533655016.246933"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "617"
+            endingLineNumber = "617"
+            landmarkName = "PointCloudsCalculation::GHDistance_CPLEX_With_Matching(PointCloud pointcloud1, PointCloud pointcloud2)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/PointCloudsCalculation.hpp"
+            timestampString = "533655016.246991"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "619"
+            endingLineNumber = "619"
+            landmarkName = "PointCloudsCalculation::GHDistance_CPLEX_With_Matching(PointCloud pointcloud1, PointCloud pointcloud2)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/PointCloudsCalculation.hpp"
+            timestampString = "533655016.247045"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "639"
+            endingLineNumber = "639"
+            landmarkName = "PointCloudsCalculation::GHDistance_CPLEX_With_Matching(PointCloud pointcloud1, PointCloud pointcloud2)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/PointCloudsCalculation.hpp"
+            timestampString = "533655016.247097"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "633"
+            endingLineNumber = "633"
+            landmarkName = "PointCloudsCalculation::GHDistance_CPLEX_With_Matching(PointCloud pointcloud1, PointCloud pointcloud2)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/PointCloud.hpp"
+            timestampString = "582124721.418623"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "678"
+            endingLineNumber = "678"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/MaxLoss.hpp"
+            timestampString = "582124721.418669"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "call_linear_programming()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cplex/MaxLoss.hpp"
+            timestampString = "582124721.418979"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "call_linear_programming()"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>

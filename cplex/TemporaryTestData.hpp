@@ -61,3 +61,6 @@ vector<vector<double>> _500ofX2 = randomExtract(pointcloudsX2, 500);
 
 vector<vector<double>> _1000ofX1 = randomExtract(pointcloudsX1, 1000);
 vector<vector<double>> _1000ofX2 = randomExtract(pointcloudsX2, 1000);
+
+vector<vector<double>> _30ofNonnor1 = randomExtract(pointcloudsX5, 30);
+vector<vector<double>> _30ofNonnor2 = randomExtract(pointcloudsX6, 30);

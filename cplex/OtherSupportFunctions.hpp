@@ -10,8 +10,25 @@
 #define OtherSupportFunctions_hpp
 
 #include <stdio.h>
+#include <dirent.h>
 
 #endif /* OtherSupportFunctions_hpp */
+
+void printFileInDir(string dirpath){
+    DIR *dir;
+    struct dirent *ent;
+    if ((dir = opendir (dirpath.c_str())) != NULL) {
+        /* print all the files and directories within directory */
+        while ((ent = readdir (dir)) != NULL) {
+            printf ("%s\n", ent->d_name);
+        }
+        closedir (dir);
+    } else {
+        /* could not open directory */
+        perror ("");
+        printf ("%s\n", "could not open dir");
+    }
+}
 
 double calculateDistortion(const int i, const int j, const int k, const int l, const vector<vector<double>> &pointclouds1,
                            const vector<vector<double>> &pointclouds2){
